@@ -1,4 +1,20 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{7F01F14A-ECAF-4689-A516-12EBFED60D47}|Default">
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.HouseRentingSystem FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HouseRentingSystem" selected="True">
+            <Node name="HouseRentingSystem" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
