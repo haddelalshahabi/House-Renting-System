@@ -18,7 +18,6 @@
     "MyShop": {
       "commandName": "Project",
       "launchBrowser": true,
-      // "launchUrl": "item/table",
       "applicationUrl": "https://localhost:7205;http://localhost:5112",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JzWJLgaBKe1YpgnMhnLflxYZMkToVgzQ106/aVN6lmo=",
+  "Hash": "i3MAEsL9wdwi8tjgwl7iIKTJhLiVIsHxKfvOi34KHUo=",
   "Source": "HouseRentingSystem",
   "BasePath": "_content/HouseRentingSystem",
   "Mode": "Default",
@@ -9,10 +9,10 @@
   "DiscoveryPatterns": [],
   "Assets": [
     {
-      "Identity": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\obj\\Debug\\net6.0\\scopedcss\\bundle\\HouseRentingSystem.styles.css",
+      "Identity": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/obj/Debug/net6.0/scopedcss/bundle/HouseRentingSystem.styles.css",
       "SourceId": "HouseRentingSystem",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/obj/Debug/net6.0/scopedcss/bundle/",
       "BasePath": "_content/HouseRentingSystem",
       "RelativePath": "HouseRentingSystem.styles.css",
       "AssetKind": "All",
@@ -23,13 +23,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\obj\\Debug\\net6.0\\scopedcss\\bundle\\HouseRentingSystem.styles.css"
+      "OriginalItemSpec": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/obj/Debug/net6.0/scopedcss/bundle/HouseRentingSystem.styles.css"
     },
     {
-      "Identity": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HouseRentingSystem.bundle.scp.css",
+      "Identity": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/obj/Debug/net6.0/scopedcss/projectbundle/HouseRentingSystem.bundle.scp.css",
       "SourceId": "HouseRentingSystem",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/obj/Debug/net6.0/scopedcss/projectbundle/",
       "BasePath": "_content/HouseRentingSystem",
       "RelativePath": "HouseRentingSystem.bundle.scp.css",
       "AssetKind": "All",
@@ -40,7 +40,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HouseRentingSystem.bundle.scp.css"
+      "OriginalItemSpec": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/obj/Debug/net6.0/scopedcss/projectbundle/HouseRentingSystem.bundle.scp.css"
     }
   ]
 }

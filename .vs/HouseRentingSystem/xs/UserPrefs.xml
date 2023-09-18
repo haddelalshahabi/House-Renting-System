@@ -1,19 +1,29 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{7F01F14A-ECAF-4689-A516-12EBFED60D47}|Default">
+﻿<Properties StartupConfiguration="{7F01F14A-ECAF-4689-A516-12EBFED60D47}|MyShop" GitUserInfo="UsingMD">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HouseRentingSystem/Models/EmptyClass.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HouseRentingSystem PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HouseRentingSystem/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="HouseRentingSystem/Models/EmptyClass.cs" Line="12" Column="1" />
+      <File FileName="HouseRentingSystem/Views/Shared/_Layout.cshtml.css" Line="10" Column="4" />
+      <File FileName="HouseRentingSystem/Views/Shared/_Layout.cshtml" Line="15" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HouseRentingSystem">
             <Node name="HouseRentingSystem">
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Views" selected="True" />
+              <Node name="Views">
+                <Node name="Home" expanded="True" />
+                <Node name="Item" expanded="True" />
+                <Node name="Shared">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
@@ -21,6 +31,4 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.HouseRentingSystem PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
-  <MultiItemStartupConfigurations />
 </Properties>
