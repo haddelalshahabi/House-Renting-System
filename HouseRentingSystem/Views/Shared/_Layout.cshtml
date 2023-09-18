@@ -10,33 +10,20 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <!-- Logo to the left -->
-                <a class="navbar-brand" href="#">
-                    <img src="path_to_logo_image.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"> <!-- Add your logo path -->
-                    House Renting System
-                </a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">My Shop</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <!-- Navigation links in the center -->
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Item" asp-action="Table">Items</a>
                         </li>
-                        <!-- Add other navigation links if needed -->
                     </ul>
-
-                    <!-- Profile icon to the right -->
-                    <div class="navbar-nav">
-                        <a href="#" class="nav-link">
-                            <img src="path_to_profile_icon.png" alt="Profile Icon" width="30" height="30" class="rounded-circle"> <!-- Add your profile icon path -->
-                        </a>
-                    </div>
                 </div>
             </div>
         </nav>
@@ -48,27 +35,50 @@
         </main>
     </div>
     <footer class="border-top footer text-muted bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <!-- Add your quick links here -->
-                </div>
-                <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <!-- Add your contact details here -->
-                </div>
-                <div class="col-md-4">
-                    <h5>Follow Us</h5>
-                    <!-- Add your social media icons here -->
+    <div class="container">
+        <div class="row">
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-area="" asp-controller="About" asp-action="Index">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a asp-area="" asp-controller="Services" asp-action="Index">Services</a></li>
+                            <li><a asp-area="" asp-controller="Contact" asp-action="Index">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    &copy; 2023 - House Renting System - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                </div>
+            <!-- Contact Us -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul>
+                    <li>Email: StaySpaces.Info@gmail.com</li>
+                    <li>Phone: +47 123 456 7890</li>
+                    <li>Address: Pilestredet 35, 0166 Oslo</li>
+                </ul>
+            </div>
+            <!-- Follow Us -->
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <ul class="social-icons">
+                    <li><a href="https://twitter.com/SpacesStay">Twitter<i class="fab fa-twitter"></i></a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <small>&copy; 2023 - House Renting System - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></small>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -59,3 +59,33 @@ C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects
 /Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/bin/Debug/net6.0/HouseRentingSystem.staticwebassets.runtime.json
 /Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/obj/Debug/net6.0/scopedcss/projectbundle/HouseRentingSystem.bundle.scp.css
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\bin\Debug\net6.0\appsettings.json
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\bin\Debug\net6.0\HouseRentingSystem.staticwebassets.runtime.json
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\bin\Debug\net6.0\HouseRentingSystem.exe
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\bin\Debug\net6.0\HouseRentingSystem.deps.json
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\bin\Debug\net6.0\HouseRentingSystem.runtimeconfig.json
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\bin\Debug\net6.0\HouseRentingSystem.dll
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\bin\Debug\net6.0\HouseRentingSystem.pdb
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\HouseRentingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\HouseRentingSystem.AssemblyInfoInputs.cache
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\HouseRentingSystem.AssemblyInfo.cs
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\HouseRentingSystem.csproj.CoreCompileInputs.cache
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\HouseRentingSystem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\HouseRentingSystem.RazorAssemblyInfo.cache
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\HouseRentingSystem.RazorAssemblyInfo.cs
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\staticwebassets\msbuild.HouseRentingSystem.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\staticwebassets\msbuild.build.HouseRentingSystem.props
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.HouseRentingSystem.props
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.HouseRentingSystem.props
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\scopedcss\bundle\HouseRentingSystem.styles.css
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\scopedcss\projectbundle\HouseRentingSystem.bundle.scp.css
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\HouseRentingSystem.dll
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\refint\HouseRentingSystem.dll
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\HouseRentingSystem.pdb
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\HouseRentingSystem.genruntimeconfig.cache
+C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\obj\Debug\net6.0\ref\HouseRentingSystem.dll
