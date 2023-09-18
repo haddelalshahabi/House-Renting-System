@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Item/Table.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbS9UYWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

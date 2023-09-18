@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using MyShop.Models;
+using HouseRentingSystem.Models;
 
-namespace MyShop.Controllers;
+namespace HouseRetingSystem.Controllers;
 
 public class ItemController : Controller
 {

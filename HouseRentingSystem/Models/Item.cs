@@ -1,5 +1,5 @@
 ﻿using System;
-namespace MyShop.Models
+namespace HouseRentingSystem.Models
 {
     public class Item
     {
