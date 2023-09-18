@@ -1,20 +1,26 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{7F01F14A-ECAF-4689-A516-12EBFED60D47}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HouseRentingSystem FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HouseRentingSystem/Models/EmptyClass.cs">
+    <Files>
+      <File FileName="HouseRentingSystem/Models/EmptyClass.cs" Line="12" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HouseRentingSystem" selected="True">
-            <Node name="HouseRentingSystem" expanded="True" />
+          <Node name="HouseRentingSystem">
+            <Node name="HouseRentingSystem">
+              <Node name="Models" expanded="True" />
+              <Node name="Views" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HouseRentingSystem PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
+  <MultiItemStartupConfigurations />
 </Properties>
