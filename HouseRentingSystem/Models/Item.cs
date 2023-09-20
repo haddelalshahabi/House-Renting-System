@@ -1,5 +1,5 @@
-﻿//using System.ComponentModel.DataAnnotations;
-using System;
+﻿using HouseRentingSystem.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace HouseRentingSystem.Models
 {
@@ -8,9 +8,10 @@ namespace HouseRentingSystem.Models
         public int ItemId { get; set; }
         public string Name { get; set; } = string.Empty;
         public decimal Price { get; set; }
-        //[Required]
         public string? Description { get; set; }
-        //[Required]
         public string? ImageUrl { get; set; }
+        // navigation property
+        public virtual List<OrderItem>? OrderItems { get; set; }
     }
 }
+

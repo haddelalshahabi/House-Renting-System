@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "MyShop": {
+    "HouseRentingSystem": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:7205;http://localhost:5112",

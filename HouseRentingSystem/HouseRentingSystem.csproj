@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MyShop' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'HouseRentingSysteme' " />
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="Views\" />
@@ -19,6 +19,11 @@
     <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.11" />
   </ItemGroup>
 </Project>
