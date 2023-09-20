@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/HouseRentingSystem.bundle.scp.css"
     },
     {
+      "Id": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/images/1.jpg",
       "PackagePath": "staticwebassets/images/1.jpg"
     },

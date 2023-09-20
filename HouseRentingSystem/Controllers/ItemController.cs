@@ -1,8 +1,6 @@
 ﻿using HouseRentingSystem.Models;
 using HouseRentingSystem.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using HouseRentingSystem.Models;
-using HouseRentingSystem.ViewModels;
 
 namespace HouseRentingSystem.Controllers;
 
@@ -54,6 +52,53 @@ public class ItemController : Controller
             return RedirectToAction(nameof(Table));
         }
         return View(item);
+    }
+
+    [HttpGet]
+    public IActionResult Update(int id)
+    {
+        var item = _itemDbContext.Items.Find(id);
+        if (item == null)
+        {
+            return NotFound();
+        }
+        return View(item);
+    }
+
+    [HttpPost]
+    public IActionResult Update(Item item)
+    {
+        if (ModelState.IsValid)
+        {
+            _itemDbContext.Items.Update(item);
+            _itemDbContext.SaveChanges();
+            return RedirectToAction(nameof(Table));
+        }
+        return View(item);
+    }
+
+    [HttpGet]
+    public IActionResult Delete(int id)
+    {
+        var item = _itemDbContext.Items.Find(id);
+        if (item == null)
+        {
+            return NotFound();
+        }
+        return View(item);
+    }
+
+    [HttpPost]
+    public IActionResult DeleteConfirmed(int id)
+    {
+        var item = _itemDbContext.Items.Find(id);
+        if (item == null)
+        {
+            return NotFound();
+        }
+        _itemDbContext.Items.Remove(item);
+        _itemDbContext.SaveChanges();
+        return RedirectToAction(nameof(Table));
     }
 }
 //public List<Item> GetItems()

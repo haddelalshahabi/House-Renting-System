@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6C7NQ55U46rNs4IwQINPSRAxQNC7OQ0CuK5upaNZJio=",
+  "Hash": "3VjvdR8UyvYZlYIKSp8g20XEfDMox335QGrutj70HxY=",
   "Source": "HouseRentingSystem",
   "BasePath": "_content/HouseRentingSystem",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/obj/Debug/net6.0/scopedcss/projectbundle/HouseRentingSystem.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/.DS_Store",
+      "SourceId": "HouseRentingSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/",
+      "BasePath": "_content/HouseRentingSystem",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
       "Identity": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/images/1.jpg",
