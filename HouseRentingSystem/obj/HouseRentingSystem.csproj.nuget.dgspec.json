@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\House Renting System\\HouseRentingSystem\\HouseRentingSystem.csproj": {}
+    "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/HouseRentingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\House Renting System\\HouseRentingSystem\\HouseRentingSystem.csproj": {
+    "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/HouseRentingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\House Renting System\\HouseRentingSystem\\HouseRentingSystem.csproj",
+        "projectUniqueName": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/HouseRentingSystem.csproj",
         "projectName": "HouseRentingSystem",
-        "projectPath": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\House Renting System\\HouseRentingSystem\\HouseRentingSystem.csproj",
-        "packagesPath": "C:\\Users\\unnis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\House Renting System\\HouseRentingSystem\\obj\\",
+        "projectPath": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/HouseRentingSystem.csproj",
+        "packagesPath": "/Users/haddelalshahabi/.nuget/packages/",
+        "outputPath": "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\unnis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/haddelalshahabi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,10 +39,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
-              "target": "Package",
-              "version": "[6.0.22, )"
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -78,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
         }
       }
     }
