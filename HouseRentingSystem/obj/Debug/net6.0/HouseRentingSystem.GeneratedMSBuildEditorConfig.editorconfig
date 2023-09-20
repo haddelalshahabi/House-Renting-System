@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbS9VcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Orde/Table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZS9UYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_Carousel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DYXJvdXNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_ItemTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19JdGVtVGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_OrderItemTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19PcmRlckl0ZW1UYWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/_ViewImports.cshtml]
