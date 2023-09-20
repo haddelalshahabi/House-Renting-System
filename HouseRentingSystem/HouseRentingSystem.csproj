@@ -17,7 +17,6 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Views\Home\" />
-    <Folder Include="wwwroot\images\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.11" />

@@ -5,6 +5,38 @@
       "PackagePath": "staticwebassets\\HouseRentingSystem.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\wwwroot\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\wwwroot\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\wwwroot\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\wwwroot\\images\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\wwwroot\\images\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\wwwroot\\images\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\wwwroot\\images\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\8.jpg"
+    },
+    {
       "Id": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css"
     },

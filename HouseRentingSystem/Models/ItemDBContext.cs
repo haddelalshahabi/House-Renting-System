@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace MyShop.Models;
+namespace HouseRentingSystem.Models;
 
 public class ItemDbContext : DbContext
 {

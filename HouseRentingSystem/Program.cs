@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MyShop.Models;
+using HouseRentingSystem.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

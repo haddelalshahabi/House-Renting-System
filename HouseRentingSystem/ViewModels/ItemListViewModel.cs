@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using MyShop.Models;
+using HouseRentingSystem.Models;
 
-namespace MyShop.ViewModels
+namespace HouseRentingSystem.ViewModels
 {
     public class ItemListViewModel
     {
