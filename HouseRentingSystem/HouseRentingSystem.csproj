@@ -13,13 +13,13 @@
     <None Remove="Views\Item\" />
     <None Remove="Views\Home\" />
     <None Remove="Views\Customer\" />
-    <None Remove="Views\Orde\" />
+    <None Remove="Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Customer\" />
-    <Folder Include="Views\Orde\" />
+    <Folder Include="Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.22" />
