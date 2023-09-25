@@ -3036,19 +3036,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zakar\\.nuget\\packages\\": {}
+    "C:\\Users\\unnis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zakar\\OneDrive\\Dokumenter\\Webapplikasjon\\House Renting System\\HouseRentingSystem\\HouseRentingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\HouseRentingSystem.csproj",
       "projectName": "HouseRentingSystem",
-      "projectPath": "C:\\Users\\zakar\\OneDrive\\Dokumenter\\Webapplikasjon\\House Renting System\\HouseRentingSystem\\HouseRentingSystem.csproj",
-      "packagesPath": "C:\\Users\\zakar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zakar\\OneDrive\\Dokumenter\\Webapplikasjon\\House Renting System\\HouseRentingSystem\\obj\\",
+      "projectPath": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\HouseRentingSystem.csproj",
+      "packagesPath": "C:\\Users\\unnis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\zakar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\unnis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
