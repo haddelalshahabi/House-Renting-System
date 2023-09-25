@@ -1,43 +1,39 @@
-﻿using HouseRentingSystem.Models;
+﻿using HouseRentingSystem.DAL;
+using HouseRentingSystem.Models;
 using HouseRentingSystem.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+
 
 namespace HouseRentingSystem.Controllers;
 
 public class ItemController : Controller
 {
-    private readonly ItemDbContext _itemDbContext;
+    private readonly IItemRepository _itemRepository;
 
-    public ItemController(ItemDbContext itemDbContext)
+    public ItemController(IItemRepository itemRepository)
     {
-        _itemDbContext = itemDbContext;
-    }
-
-    public List<Order> OrderConsole()
-    {
-        return _itemDbContext.Orders.ToList();
+        _itemRepository = itemRepository;
     }
 
     public async Task<IActionResult> Table()
     {
-        List<Item> items = await _itemDbContext.Items.ToListAsync();
+        var items = await _itemRepository.GetAll();
         var itemListViewModel = new ItemListViewModel(items, "Table");
         return View(itemListViewModel);
     }
 
     public async Task<IActionResult> Grid()
     {
-        List<Item> items = await _itemDbContext.Items.ToListAsync();
+        var items = await _itemRepository.GetAll();
         var itemListViewModel = new ItemListViewModel(items, "Grid");
         return View(itemListViewModel);
     }
 
     public async Task<IActionResult> Details(int id)
     {
-        var item = await _itemDbContext.Items.FirstOrDefaultAsync(i => i.ItemId == id);
+        var item = await _itemRepository.GetItemById(id);
         if (item == null)
-            return NotFound();
+            return BadRequest("Item not found.");
         return View(item);
     }
 
@@ -52,17 +48,17 @@ public class ItemController : Controller
     {
         if (ModelState.IsValid)
         {
-            _itemDbContext.Items.Add(item);
-            await _itemDbContext.SaveChangesAsync();
+            await _itemRepository.Create(item);
             return RedirectToAction(nameof(Table));
         }
+
         return View(item);
     }
 
     [HttpGet]
     public async Task<IActionResult> Update(int id)
     {
-        var item = await _itemDbContext.Items.FindAsync(id);
+        var item = await _itemRepository.GetItemById(id);
         if (item == null)
         {
             return NotFound();
@@ -75,17 +71,17 @@ public class ItemController : Controller
     {
         if (ModelState.IsValid)
         {
-            _itemDbContext.Items.Update(item);
-            await _itemDbContext.SaveChangesAsync();
+            await _itemRepository.Update(item);
             return RedirectToAction(nameof(Table));
         }
+
         return View(item);
     }
 
     [HttpGet]
     public async Task<IActionResult> Delete(int id)
     {
-        var item = await _itemDbContext.Items.FindAsync(id);
+        var item = await _itemRepository.GetItemById(id);
         if (item == null)
         {
             return NotFound();
@@ -96,13 +92,7 @@ public class ItemController : Controller
     [HttpPost]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
-        var item = await _itemDbContext.Items.FindAsync(id);
-        if (item == null)
-        {
-            return NotFound();
-        }
-        _itemDbContext.Items.Remove(item);
-        await _itemDbContext.SaveChangesAsync();
+        await _itemRepository.Delete(id);
         return RedirectToAction(nameof(Table));
     }
 }
