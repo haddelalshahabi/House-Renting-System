@@ -1,33 +1,38 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{7F01F14A-ECAF-4689-A516-12EBFED60D47}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.HouseRentingSystem PreferredExecutionTarget="/Applications/Google Chrome.app" />
+﻿<Properties StartupConfiguration="{7320C725-2BD0-4D03-A488-A5A97F1597D8}|Default" GitUserInfo="UsingMD">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HouseRentingSystem/Views/Item/Delete.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HouseRentingSystem/Controllers/HomeController.cs">
     <Files>
-      <File FileName="HouseRentingSystem/Controllers/OrderController.cs" Line="21" Column="2" />
-      <File FileName="HouseRentingSystem/Views/Item/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="HouseRentingSystem/Program.cs" Line="21" Column="30" IsPinned="True" />
+      <File FileName="HouseRentingSystem/Controllers/CustomerController.cs" Line="1" Column="1" />
+      <File FileName="HouseRentingSystem/Controllers/HomeController.cs" Line="11" Column="45" />
+      <File FileName="HouseRentingSystem/Controllers/ItemController.cs" Line="121" Column="2" />
+      <File FileName="HouseRentingSystem/DAL/ItemDBContext.cs" Line="23" Column="2" />
+      <File FileName="HouseRentingSystem/DAL/IItemRepository.cs" Line="12" Column="31" />
+      <File FileName="HouseRentingSystem/DAL/ItemRepository.cs" Line="8" Column="2" />
+      <File FileName="HouseRentingSystem/DAL/DbInit.cs" Line="1" Column="1" />
+      <File FileName="HouseRentingSystem/Controllers/OrderController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HouseRentingSystem" expanded="True" selected="True">
+          <Node name="HouseRentingSystem">
             <Node name="HouseRentingSystem" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Customer" expanded="True" />
-                <Node name="Home" expanded="True" />
-                <Node name="Item" expanded="True" />
-                <Node name="Orde" expanded="True" />
-                <Node name="Shared" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="DAL" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.HouseRentingSystem PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

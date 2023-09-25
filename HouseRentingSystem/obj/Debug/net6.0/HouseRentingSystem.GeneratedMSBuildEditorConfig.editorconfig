@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HouseRentingSystem
 build_property.RootNamespace = HouseRentingSystem
-build_property.ProjectDir = C:\Users\berry\OneDrive - OsloMet\Webappikasjon\project\HouseRentingSystem\
+build_property.ProjectDir = /Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\berry\OneDrive - OsloMet\Webappikasjon\project\HouseRentingSystem
+build_property.MSBuildProjectDirectory = /Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Customer/Table.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcVGFibGUuY3NodG1s
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Customer/Table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Item/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxDcmVhdGUuY3NodG1s
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Item/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Item/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZWxldGUuY3NodG1s
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Item/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbS9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Item/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZXRhaWxzLmNzaHRtbA==
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Item/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbS9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Item/Grid.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxHcmlkLmNzaHRtbA==
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Item/Grid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbS9HcmlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Item/Table.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxUYWJsZS5jc2h0bWw=
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Item/Table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbS9UYWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Item/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxVcGRhdGUuY3NodG1s
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Item/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbS9VcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Order/CreateOrderItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlT3JkZXJJdGVtLmNzaHRtbA==
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Order/CreateOrderItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvQ3JlYXRlT3JkZXJJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Order/Table.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcVGFibGUuY3NodG1s
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Order/Table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Shared/_Carousel.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJvdXNlbC5jc2h0bWw=
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_Carousel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DYXJvdXNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Shared/_CustomerTable.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdXN0b21lclRhYmxlLmNzaHRtbA==
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_CustomerTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DdXN0b21lclRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Shared/_ItemCard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JdGVtQ2FyZC5jc2h0bWw=
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_ItemCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19JdGVtQ2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Shared/_ItemTable.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JdGVtVGFibGUuY3NodG1s
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_ItemTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19JdGVtVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Shared/_OrderItemTable.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PcmRlckl0ZW1UYWJsZS5jc2h0bWw=
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_OrderItemTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19PcmRlckl0ZW1UYWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/berry/OneDrive - OsloMet/Webappikasjon/project/HouseRentingSystem/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-rajcmqn5q3
+[/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hrfnjitunh

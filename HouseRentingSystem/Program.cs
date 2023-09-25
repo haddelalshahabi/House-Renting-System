@@ -1,6 +1,6 @@
-﻿using HouseRentingSystem.Models;
+﻿using HouseRentingSystem.DAL;
+using HouseRentingSystem.Models;
 using Microsoft.EntityFrameworkCore;
-using HouseRentingSystem.DAL;
 using Serilog;
 using Serilog.Events;
 

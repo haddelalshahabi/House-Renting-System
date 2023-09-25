@@ -1,9 +1,9 @@
-﻿using HouseRentingSystem.Models;
+﻿using HouseRentingSystem.DAL;
+using HouseRentingSystem.Models;
 using HouseRentingSystem.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using HouseRentingSystem.DAL;
 
-namespace MyShop.Controllers;
+namespace HouseRentingSystem.Controllers;
 
 public class ItemController : Controller
 {
