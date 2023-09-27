@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\HouseRentingSystem.csproj": {}
+    "C:\\Users\\berry\\OneDrive - OsloMet\\Webappikasjon\\Project\\HouseRentingSystem\\HouseRentingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\HouseRentingSystem.csproj": {
+    "C:\\Users\\berry\\OneDrive - OsloMet\\Webappikasjon\\Project\\HouseRentingSystem\\HouseRentingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\HouseRentingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\berry\\OneDrive - OsloMet\\Webappikasjon\\Project\\HouseRentingSystem\\HouseRentingSystem.csproj",
         "projectName": "HouseRentingSystem",
-        "projectPath": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\HouseRentingSystem.csproj",
-        "packagesPath": "C:\\Users\\unnis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\unnis\\OneDrive - OsloMet\\5.semester\\ITPE3200 Webappplikasjoner\\Projects\\HouseRentingSystem\\HouseRentingSystem\\obj\\",
+        "projectPath": "C:\\Users\\berry\\OneDrive - OsloMet\\Webappikasjon\\Project\\HouseRentingSystem\\HouseRentingSystem.csproj",
+        "packagesPath": "C:\\Users\\berry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\berry\\OneDrive - OsloMet\\Webappikasjon\\Project\\HouseRentingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\unnis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\berry\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
