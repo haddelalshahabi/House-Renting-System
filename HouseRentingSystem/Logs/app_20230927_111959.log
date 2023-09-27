@@ -1,0 +1,148 @@
+2023-09-27 11:20:00.095 +02:00 [Information] User profile is available. Using '"/Users/haddelalshahabi/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2023-09-27 11:20:00.326 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-09-27 11:20:00.327 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-09-27 11:20:00.329 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-09-27 11:20:00.329 +02:00 [Information] Hosting environment: "Development"
+2023-09-27 11:20:00.330 +02:00 [Information] Content root path: "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem"
+2023-09-27 11:20:01.495 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-09-27 11:20:01.511 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 11:20:01.516 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 11:20:01.522 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 11:20:01.555 +02:00 [Information] Executed ViewResult - view "Index" executed in 35.0615ms.
+2023-09-27 11:20:01.556 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 39.9141ms
+2023-09-27 11:20:01.556 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 11:20:01.559 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 64.5036ms
+2023-09-27 11:20:01.562 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-09-27 11:20:01.563 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-09-27 11:20:01.707 +02:00 [Information] Sending file. Request path: '"/lib/jquery/jquery.js"'. Physical path: '"/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/lib/jquery/jquery.js"'
+2023-09-27 11:20:01.707 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/js/bootstrap.js"'. Physical path: '"/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/lib/bootstrap/js/bootstrap.js"'
+2023-09-27 11:20:01.708 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 200 145302 text/javascript 145.6490ms
+2023-09-27 11:20:01.708 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - - - 200 284996 text/javascript 146.5731ms
+2023-09-27 11:20:01.709 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/7.jpg - -
+2023-09-27 11:20:01.709 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/6.jpg - -
+2023-09-27 11:20:01.714 +02:00 [Information] Sending file. Request path: '"/images/6.jpg"'. Physical path: '"/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/images/6.jpg"'
+2023-09-27 11:20:01.714 +02:00 [Information] Sending file. Request path: '"/images/7.jpg"'. Physical path: '"/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/images/7.jpg"'
+2023-09-27 11:20:01.714 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/6.jpg - - - 200 185314 image/jpeg 5.5421ms
+2023-09-27 11:20:01.715 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/7.jpg - - - 200 154286 image/jpeg 5.6246ms
+2023-09-27 11:20:01.716 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/8.jpg - -
+2023-09-27 11:20:01.727 +02:00 [Information] The file "/images/8.jpg" was not modified
+2023-09-27 11:20:01.727 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/8.jpg - - - 304 - image/jpeg 11.2881ms
+2023-09-27 11:20:28.039 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Item/Table - -
+2023-09-27 11:20:28.040 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Table (HouseRentingSystem)"'
+2023-09-27 11:20:28.048 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 11:20:28.111 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-27 11:20:28.119 +02:00 [Information] Executed ViewResult - view "Table" executed in 8.6099ms.
+2023-09-27 11:20:28.119 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Table (HouseRentingSystem)" in 71.5189ms
+2023-09-27 11:20:28.119 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Table (HouseRentingSystem)"'
+2023-09-27 11:20:28.122 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Item/Table - - - 200 - text/html;+charset=utf-8 84.7064ms
+2023-09-27 11:20:28.126 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/1.jpg - -
+2023-09-27 11:20:28.127 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/2.jpg - -
+2023-09-27 11:20:28.320 +02:00 [Information] Sending file. Request path: '"/images/1.jpg"'. Physical path: '"/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/images/1.jpg"'
+2023-09-27 11:20:28.320 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/1.jpg - - - 200 80254 image/jpeg 193.9846ms
+2023-09-27 11:20:28.445 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/5.jpg - -
+2023-09-27 11:20:28.450 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/3.jpg - -
+2023-09-27 11:20:28.452 +02:00 [Information] The file "/images/3.jpg" was not modified
+2023-09-27 11:20:28.454 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/3.jpg - - - 304 - image/jpeg 3.3215ms
+2023-09-27 11:20:28.482 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/4.jpg - -
+2023-09-27 11:20:28.483 +02:00 [Information] The file "/images/4.jpg" was not modified
+2023-09-27 11:20:28.528 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/4.jpg - - - 304 - image/jpeg 45.8424ms
+2023-09-27 11:20:28.531 +02:00 [Information] Sending file. Request path: '"/images/2.jpg"'. Physical path: '"/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/images/2.jpg"'
+2023-09-27 11:20:28.531 +02:00 [Information] Sending file. Request path: '"/images/5.jpg"'. Physical path: '"/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/images/5.jpg"'
+2023-09-27 11:20:28.531 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/5.jpg - - - 200 94884 image/jpeg 85.9134ms
+2023-09-27 11:20:28.531 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/2.jpg - - - 200 123598 image/jpeg 404.5027ms
+2023-09-27 11:20:28.575 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Customer/Table - -
+2023-09-27 11:20:28.575 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.CustomerController.Table (HouseRentingSystem)"'
+2023-09-27 11:20:28.579 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "HouseRentingSystem.Controllers.CustomerController" ("HouseRentingSystem").
+2023-09-27 11:20:28.623 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-27 11:20:28.644 +02:00 [Information] Executed ViewResult - view "Table" executed in 20.8999ms.
+2023-09-27 11:20:28.644 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.CustomerController.Table (HouseRentingSystem)" in 65.0447ms
+2023-09-27 11:20:28.644 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.CustomerController.Table (HouseRentingSystem)"'
+2023-09-27 11:20:28.644 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Customer/Table - - - 200 - text/html;+charset=utf-8 69.3927ms
+2023-09-27 11:20:29.502 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Item/Table - -
+2023-09-27 11:20:29.504 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Table (HouseRentingSystem)"'
+2023-09-27 11:20:29.505 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 11:20:29.510 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-27 11:20:29.513 +02:00 [Information] Executed ViewResult - view "Table" executed in 3.0697ms.
+2023-09-27 11:20:29.513 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Table (HouseRentingSystem)" in 8.0488ms
+2023-09-27 11:20:29.513 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Table (HouseRentingSystem)"'
+2023-09-27 11:20:29.513 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Item/Table - - - 200 - text/html;+charset=utf-8 10.8996ms
+2023-09-27 11:20:30.837 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Item/Create - -
+2023-09-27 11:20:30.838 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:20:30.840 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Item\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Create()" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 11:20:30.844 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-27 11:20:30.897 +02:00 [Information] Executed ViewResult - view "Create" executed in 54.0911ms.
+2023-09-27 11:20:30.897 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Create (HouseRentingSystem)" in 57.4366ms
+2023-09-27 11:20:30.897 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:20:30.898 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Item/Create - - - 200 - text/html;+charset=utf-8 60.0696ms
+2023-09-27 11:20:30.909 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-09-27 11:20:30.909 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-09-27 11:20:30.909 +02:00 [Information] The file "/lib/bootstrap/js/bootstrap.js" was not modified
+2023-09-27 11:20:30.909 +02:00 [Information] The file "/lib/jquery/jquery.js" was not modified
+2023-09-27 11:20:30.909 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 304 - text/javascript 0.5535ms
+2023-09-27 11:20:30.910 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - - - 304 - text/javascript 0.5588ms
+2023-09-27 11:20:32.203 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 218
+2023-09-27 11:20:32.203 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:20:32.228 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HouseRentingSystem.Models.Item)" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 11:20:32.255 +02:00 [Warning] [ItemController] Item creation failed Item { ItemId: 0, Name: null, Price: 0, Description: null, ImageUrl: null, OrderItems: null }
+2023-09-27 11:20:32.255 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-27 11:20:32.259 +02:00 [Information] Executed ViewResult - view "Create" executed in 3.2862ms.
+2023-09-27 11:20:32.259 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Create (HouseRentingSystem)" in 30.0974ms
+2023-09-27 11:20:32.259 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:20:32.259 +02:00 [Information] Request finished HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 218 - 200 - text/html;+charset=utf-8 56.1878ms
+2023-09-27 11:21:24.592 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 225
+2023-09-27 11:21:24.592 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:21:24.592 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HouseRentingSystem.Models.Item)" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 11:21:24.598 +02:00 [Warning] [ItemController] Item creation failed Item { ItemId: 0, Name: "##", Price: 0, Description: null, ImageUrl: null, OrderItems: null }
+2023-09-27 11:21:24.599 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-27 11:21:24.604 +02:00 [Information] Executed ViewResult - view "Create" executed in 5.7194ms.
+2023-09-27 11:21:24.605 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Create (HouseRentingSystem)" in 12.4266ms
+2023-09-27 11:21:24.605 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:21:24.605 +02:00 [Information] Request finished HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 13.1445ms
+2023-09-27 11:21:24.616 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-09-27 11:21:24.616 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-09-27 11:21:24.616 +02:00 [Information] The file "/lib/jquery/jquery.js" was not modified
+2023-09-27 11:21:24.616 +02:00 [Information] The file "/lib/bootstrap/js/bootstrap.js" was not modified
+2023-09-27 11:21:24.616 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 304 - text/javascript 0.5422ms
+2023-09-27 11:21:24.616 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - - - 304 - text/javascript 0.5422ms
+2023-09-27 11:21:31.180 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 323
+2023-09-27 11:21:31.180 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:21:31.180 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HouseRentingSystem.Models.Item)" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 11:21:31.182 +02:00 [Warning] [ItemController] Item creation failed Item { ItemId: 0, Name: "##", Price: 0, Description: "Generell informasjon om hva programmet gjør. Dette er ofte ikke kritisk jjjjjjjjjjjjjjjjjjjjj", ImageUrl: null, OrderItems: null }
+2023-09-27 11:21:31.183 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-27 11:21:31.185 +02:00 [Information] Executed ViewResult - view "Create" executed in 2.4607ms.
+2023-09-27 11:21:31.186 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Create (HouseRentingSystem)" in 5.4699ms
+2023-09-27 11:21:31.186 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:21:31.186 +02:00 [Information] Request finished HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 323 - 200 - text/html;+charset=utf-8 6.1064ms
+2023-09-27 11:21:55.048 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 218
+2023-09-27 11:21:55.049 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:21:55.049 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HouseRentingSystem.Models.Item)" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 11:21:55.052 +02:00 [Warning] [ItemController] Item creation failed Item { ItemId: 0, Name: null, Price: 0, Description: null, ImageUrl: null, OrderItems: null }
+2023-09-27 11:21:55.053 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-27 11:21:55.055 +02:00 [Information] Executed ViewResult - view "Create" executed in 2.3932ms.
+2023-09-27 11:21:55.055 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Create (HouseRentingSystem)" in 6.1228ms
+2023-09-27 11:21:55.055 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:21:55.055 +02:00 [Information] Request finished HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 218 - 200 - text/html;+charset=utf-8 7.6547ms
+2023-09-27 11:21:55.848 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 218
+2023-09-27 11:21:55.848 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:21:55.848 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HouseRentingSystem.Models.Item)" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 11:21:55.851 +02:00 [Warning] [ItemController] Item creation failed Item { ItemId: 0, Name: null, Price: 0, Description: null, ImageUrl: null, OrderItems: null }
+2023-09-27 11:21:55.851 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-27 11:21:55.853 +02:00 [Information] Executed ViewResult - view "Create" executed in 1.9282ms.
+2023-09-27 11:21:55.853 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Create (HouseRentingSystem)" in 5.0839ms
+2023-09-27 11:21:55.853 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:21:55.853 +02:00 [Information] Request finished HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 218 - 200 - text/html;+charset=utf-8 5.6732ms
+2023-09-27 11:22:08.947 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 218
+2023-09-27 11:22:08.947 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:22:08.948 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HouseRentingSystem.Models.Item)" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 11:22:08.950 +02:00 [Warning] [ItemController] Item creation failed Item { ItemId: 0, Name: null, Price: 0, Description: null, ImageUrl: null, OrderItems: null }
+2023-09-27 11:22:08.950 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-27 11:22:08.952 +02:00 [Information] Executed ViewResult - view "Create" executed in 1.6532ms.
+2023-09-27 11:22:08.952 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Create (HouseRentingSystem)" in 4.5767ms
+2023-09-27 11:22:08.952 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Create (HouseRentingSystem)"'
+2023-09-27 11:22:08.952 +02:00 [Information] Request finished HTTP/1.1 POST https://localhost:7205/Item/Create application/x-www-form-urlencoded 218 - 200 - text/html;+charset=utf-8 5.2046ms
+2023-09-27 11:22:08.970 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-09-27 11:22:08.970 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-09-27 11:22:08.970 +02:00 [Information] The file "/lib/bootstrap/js/bootstrap.js" was not modified
+2023-09-27 11:22:08.972 +02:00 [Information] The file "/lib/jquery/jquery.js" was not modified
+2023-09-27 11:22:08.972 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - - - 304 - text/javascript 2.2757ms
+2023-09-27 11:22:08.972 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 304 - text/javascript 2.4792ms

@@ -10,7 +10,7 @@ public static class DBInit
         using var serviceScope = app.ApplicationServices.CreateScope();
         ItemDbContext context = serviceScope.ServiceProvider.GetRequiredService<ItemDbContext>();
         // Kommenter bort EnsureDeleted() etter at elementene er fikset.
-        context.Database.EnsureDeleted();
+        //context.Database.EnsureDeleted();
         context.Database.EnsureCreated();
 
         if (!context.Items.Any())

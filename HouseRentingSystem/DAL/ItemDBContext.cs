@@ -1,9 +1,9 @@
-﻿using HouseRentingSystem.Models;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace HouseRentingSystem.Models;
 
-public class ItemDbContext : DbContext
+public class ItemDbContext : IdentityDbContext
 {
     public ItemDbContext(DbContextOptions<ItemDbContext> options) : base(options)
     {
@@ -19,6 +19,4 @@ public class ItemDbContext : DbContext
     {
         optionsBuilder.UseLazyLoadingProxies();
     }
-
 }
-
