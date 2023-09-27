@@ -9,82 +9,102 @@
     <script src="~/lib/jquery/jquery.js"></script>
     <script src="~/lib/jquery-validate/jquery.validate.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="https://kit.fontawesome.com/0f8b312258.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Stay Spaces</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Item" asp-action="Table">Items</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Customer" asp-action="Table">Customers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="Table">Orders</a>
-                        </li>
-                    </ul>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <i class="fa-solid fa-snowflake"></i>
+                    <h1 class="d-inline">Stay Spaces</h1>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+                <div class="col-auto">
+                    <!-- Language Icon -->
+                    <a href="#" role="button" id="languageButton">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <!-- Profile Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user-circle"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="#">Registrer deg</a></li>
+                            <li><a class="dropdown-item" href="#">Logg inn</a></li>
+                            <li><a class="dropdown-item" href="#">Legg ut hjemmet ditt på Airbnb</a></li>
+                            <li><a class="dropdown-item" href="#">Hjelpesenteret</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </nav>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hytte</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Kupler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nær skiløype/-bakke</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Herskapshus</a>
+                                </li>
+                            </ul>
+                            <!-- Filter can be added here -->
+                            <div class="d-flex">
+                                <select class="form-select" aria-label="Filter by price">
+                                    <option selected>Price</option>
+                                    <option value="1">Low to High</option>
+                                    <option value="2">High to Low</option>
+                                </select>
+                                <!-- Add more filters as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+
     <footer class="border-top footer text-muted bg-dark">
         <div class="container">
             <div class="row">
-                <!-- Quick Links -->
                 <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul>
-                                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                                <li><a asp-area="" asp-controller="About" asp-action="Index">About Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li><a asp-area="" asp-controller="Services" asp-action="Index">Services</a></li>
-                                <li><a asp-area="" asp-controller="Contact" asp-action="Index">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <h5>Støtte</h5>
+                    <!-- Add sub-information here -->
                 </div>
-                <!-- Contact Us -->
                 <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <ul>
-                        <li>Email: StaySpaces.Info@gmail.com</li>
-                        <li>Phone: +47 123 456 7890</li>
-                        <li>Address: Pilestredet 35, 0166 Oslo</li>
-                    </ul>
+                    <h5>Vertskap</h5>
+                    <!-- Add sub-information here -->
                 </div>
-                <!-- Follow Us -->
                 <div class="col-md-4">
-                    <h5>Follow Us</h5>
-                    <ul class="social-icons">
-                        <li><a href="https://twitter.com/SpacesStay">Twitter<i class="fab fa-twitter"></i></a></li>
-                    </ul>
+                    <h5>Stay Spaces</h5>
+                    <!-- Add sub-information here -->
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-12">
-                    <small>&copy; 2023 - House Renting System - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></small>
+                    <small>&copy; 2023 Stay Spaces, Inc. · Personvern · Vilkår · Firmaopplysninger</small>
                 </div>
             </div>
         </div>
