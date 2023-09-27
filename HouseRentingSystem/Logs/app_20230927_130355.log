@@ -1,0 +1,98 @@
+2023-09-27 13:03:56.649 +02:00 [Information] User profile is available. Using '"/Users/haddelalshahabi/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2023-09-27 13:03:56.842 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-09-27 13:03:56.843 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-09-27 13:03:56.845 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-09-27 13:03:56.845 +02:00 [Information] Hosting environment: "Development"
+2023-09-27 13:03:56.846 +02:00 [Information] Content root path: "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem"
+2023-09-27 13:03:58.007 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-09-27 13:03:58.022 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:03:58.027 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 13:03:58.033 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 13:03:58.073 +02:00 [Information] Executed ViewResult - view "Index" executed in 41.0859ms.
+2023-09-27 13:03:58.073 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 45.4796ms
+2023-09-27 13:03:58.073 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:03:58.076 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 69.7364ms
+2023-09-27 13:04:01.098 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Item/Table - -
+2023-09-27 13:04:01.101 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Table (HouseRentingSystem)"'
+2023-09-27 13:04:01.109 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 13:04:01.165 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-27 13:04:01.173 +02:00 [Information] Executed ViewResult - view "Table" executed in 8.2562ms.
+2023-09-27 13:04:01.173 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Table (HouseRentingSystem)" in 63.636ms
+2023-09-27 13:04:01.173 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Table (HouseRentingSystem)"'
+2023-09-27 13:04:01.175 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Item/Table - - - 200 - text/html;+charset=utf-8 77.9607ms
+2023-09-27 13:04:02.039 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Item/Table - -
+2023-09-27 13:04:02.045 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Table (HouseRentingSystem)"'
+2023-09-27 13:04:02.045 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 13:04:02.103 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-27 13:04:02.105 +02:00 [Information] Executed ViewResult - view "Table" executed in 1.4382ms.
+2023-09-27 13:04:02.105 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Table (HouseRentingSystem)" in 59.5162ms
+2023-09-27 13:04:02.105 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Table (HouseRentingSystem)"'
+2023-09-27 13:04:02.105 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Item/Table - - - 200 - text/html;+charset=utf-8 66.2087ms
+2023-09-27 13:04:28.664 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-09-27 13:04:28.665 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:28.665 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 13:04:28.665 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 13:04:28.667 +02:00 [Information] Executed ViewResult - view "Index" executed in 1.8646ms.
+2023-09-27 13:04:28.667 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 2.506ms
+2023-09-27 13:04:28.668 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:28.669 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 3.7421ms
+2023-09-27 13:04:29.371 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-09-27 13:04:29.374 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:29.374 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 13:04:29.374 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 13:04:29.375 +02:00 [Information] Executed ViewResult - view "Index" executed in 0.7763ms.
+2023-09-27 13:04:29.375 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 0.9248ms
+2023-09-27 13:04:29.375 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:29.375 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 4.4637ms
+2023-09-27 13:04:29.604 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-09-27 13:04:29.605 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:29.605 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 13:04:29.605 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 13:04:29.606 +02:00 [Information] Executed ViewResult - view "Index" executed in 1.0595ms.
+2023-09-27 13:04:29.607 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 1.2718ms
+2023-09-27 13:04:29.607 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:29.607 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 2.2205ms
+2023-09-27 13:04:29.766 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-09-27 13:04:29.766 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:29.766 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 13:04:29.767 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 13:04:29.768 +02:00 [Information] Executed ViewResult - view "Index" executed in 1.2149ms.
+2023-09-27 13:04:29.768 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 1.4411ms
+2023-09-27 13:04:29.768 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:29.768 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 2.2427ms
+2023-09-27 13:04:29.968 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-09-27 13:04:29.968 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:29.969 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 13:04:29.969 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 13:04:29.970 +02:00 [Information] Executed ViewResult - view "Index" executed in 1.2116ms.
+2023-09-27 13:04:29.970 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 1.4595ms
+2023-09-27 13:04:29.970 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:29.970 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 2.3545ms
+2023-09-27 13:04:41.374 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-09-27 13:04:41.374 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:41.374 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 13:04:41.374 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 13:04:41.375 +02:00 [Information] Executed ViewResult - view "Index" executed in 0.6897ms.
+2023-09-27 13:04:41.375 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 0.858ms
+2023-09-27 13:04:41.375 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:41.375 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 1.5591ms
+2023-09-27 13:04:41.391 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-09-27 13:04:41.392 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-09-27 13:04:41.443 +02:00 [Information] The file "/lib/bootstrap/js/bootstrap.js" was not modified
+2023-09-27 13:04:41.443 +02:00 [Information] The file "/lib/jquery/jquery.js" was not modified
+2023-09-27 13:04:41.538 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 304 - text/javascript 121.4755ms
+2023-09-27 13:04:41.538 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - - - 304 - text/javascript 146.7268ms
+2023-09-27 13:04:41.585 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/jquery-validate/jquery.validate.js - -
+2023-09-27 13:04:41.586 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-09-27 13:04:41.589 +02:00 [Information] The file "/lib/jquery-validate/jquery.validate.js" was not modified
+2023-09-27 13:04:41.589 +02:00 [Information] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified
+2023-09-27 13:04:41.589 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/jquery-validate/jquery.validate.js - - - 304 - text/javascript 3.9006ms
+2023-09-27 13:04:41.589 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 304 - text/javascript 3.3373ms
+2023-09-27 13:04:43.074 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-09-27 13:04:43.075 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:43.075 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 13:04:43.075 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 13:04:43.076 +02:00 [Information] Executed ViewResult - view "Index" executed in 0.7685ms.
+2023-09-27 13:04:43.076 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 1.0042ms
+2023-09-27 13:04:43.076 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 13:04:43.076 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 1.9133ms
