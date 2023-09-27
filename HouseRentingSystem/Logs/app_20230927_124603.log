@@ -1,0 +1,112 @@
+2023-09-27 12:46:06.861 +02:00 [Information] User profile is available. Using '"C:\Users\unnis\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-27 12:46:07.110 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-09-27 12:46:07.111 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-09-27 12:46:07.120 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-09-27 12:46:07.122 +02:00 [Information] Hosting environment: "Development"
+2023-09-27 12:46:07.124 +02:00 [Information] Content root path: "C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\"
+2023-09-27 12:46:07.839 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/ - -
+2023-09-27 12:46:07.930 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 12:46:07.949 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 12:46:08.010 +02:00 [Information] Executing action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" - Validation state: Valid
+2023-09-27 12:46:08.015 +02:00 [Information] Executed action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7156ms.
+2023-09-27 12:46:08.027 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 12:46:08.229 +02:00 [Information] Executed ViewResult - view "Index" executed in 204.6831ms.
+2023-09-27 12:46:08.234 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 284.808ms
+2023-09-27 12:46:08.235 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 12:46:08.274 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 439.1178ms
+2023-09-27 12:46:08.291 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery-validate/jquery.validate.js - -
+2023-09-27 12:46:08.291 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-09-27 12:46:08.291 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-09-27 12:46:08.291 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-09-27 12:46:08.310 +02:00 [Information] The file "/lib/jquery/jquery.js" was not modified
+2023-09-27 12:46:08.310 +02:00 [Information] The file "/lib/jquery-validate/jquery.validate.js" was not modified
+2023-09-27 12:46:08.310 +02:00 [Information] The file "/lib/bootstrap/js/bootstrap.js" was not modified
+2023-09-27 12:46:08.310 +02:00 [Information] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified
+2023-09-27 12:46:08.311 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery/jquery.js - - - 304 - application/javascript 19.4090ms
+2023-09-27 12:46:08.311 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery-validate/jquery.validate.js - - - 304 - application/javascript 19.4048ms
+2023-09-27 12:46:08.311 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 304 - application/javascript 19.3941ms
+2023-09-27 12:46:08.311 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 304 - application/javascript 19.4144ms
+2023-09-27 12:46:08.323 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/6.jpg - -
+2023-09-27 12:46:08.323 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-09-27 12:46:08.324 +02:00 [Information] The file "/images/6.jpg" was not modified
+2023-09-27 12:46:08.325 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/6.jpg - - - 304 - image/jpeg 1.2831ms
+2023-09-27 12:46:08.329 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 5.2373ms
+2023-09-27 12:46:08.332 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-09-27 12:46:08.332 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/8.jpg - -
+2023-09-27 12:46:08.332 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/7.jpg - -
+2023-09-27 12:46:08.333 +02:00 [Information] The file "/images/7.jpg" was not modified
+2023-09-27 12:46:08.333 +02:00 [Information] The file "/images/8.jpg" was not modified
+2023-09-27 12:46:08.333 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/7.jpg - - - 304 - image/jpeg 0.7034ms
+2023-09-27 12:46:08.333 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/8.jpg - - - 304 - image/jpeg 0.6809ms
+2023-09-27 12:46:08.352 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.7754ms
+2023-09-27 12:47:02.611 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/ - -
+2023-09-27 12:47:02.626 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 12:47:02.631 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 12:47:02.643 +02:00 [Information] Executing action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" - Validation state: Valid
+2023-09-27 12:47:02.643 +02:00 [Information] Executed action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0401ms.
+2023-09-27 12:47:02.644 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 12:47:02.661 +02:00 [Information] Executed ViewResult - view "Index" executed in 16.8526ms.
+2023-09-27 12:47:02.661 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 30.0292ms
+2023-09-27 12:47:02.661 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 12:47:02.664 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 52.5831ms
+2023-09-27 12:47:02.678 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-09-27 12:47:02.678 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-09-27 12:47:02.678 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 0.4801ms
+2023-09-27 12:47:02.689 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.1180ms
+2023-09-27 12:47:04.262 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/Item/Table - -
+2023-09-27 12:47:04.263 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Table (HouseRentingSystem)"'
+2023-09-27 12:47:04.267 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "MyShop.Controllers.ItemController" ("HouseRentingSystem").
+2023-09-27 12:47:04.289 +02:00 [Information] Executing action method "MyShop.Controllers.ItemController.Table (HouseRentingSystem)" - Validation state: Valid
+2023-09-27 12:47:04.367 +02:00 [Information] Executed action method "MyShop.Controllers.ItemController.Table (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 77.6496ms.
+2023-09-27 12:47:04.368 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-27 12:47:04.387 +02:00 [Information] Executed ViewResult - view "Table" executed in 19.9329ms.
+2023-09-27 12:47:04.387 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Table (HouseRentingSystem)" in 120.3509ms
+2023-09-27 12:47:04.387 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Table (HouseRentingSystem)"'
+2023-09-27 12:47:04.394 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/2.jpg - -
+2023-09-27 12:47:04.394 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/1.jpg - -
+2023-09-27 12:47:04.395 +02:00 [Information] The file "/images/1.jpg" was not modified
+2023-09-27 12:47:04.395 +02:00 [Information] The file "/images/2.jpg" was not modified
+2023-09-27 12:47:04.395 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/1.jpg - - - 304 - image/jpeg 0.9488ms
+2023-09-27 12:47:04.395 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/2.jpg - - - 304 - image/jpeg 0.8360ms
+2023-09-27 12:47:04.401 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/Item/Table - - - 200 - text/html;+charset=utf-8 139.2946ms
+2023-09-27 12:47:04.404 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-09-27 12:47:04.404 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/3.jpg - -
+2023-09-27 12:47:04.404 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/4.jpg - -
+2023-09-27 12:47:04.405 +02:00 [Information] The file "/images/4.jpg" was not modified
+2023-09-27 12:47:04.405 +02:00 [Information] The file "/images/3.jpg" was not modified
+2023-09-27 12:47:04.405 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/5.jpg - -
+2023-09-27 12:47:04.406 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 1.1353ms
+2023-09-27 12:47:04.407 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/4.jpg - - - 304 - image/jpeg 2.2173ms
+2023-09-27 12:47:04.407 +02:00 [Information] The file "/images/5.jpg" was not modified
+2023-09-27 12:47:04.407 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/3.jpg - - - 304 - image/jpeg 2.3029ms
+2023-09-27 12:47:04.452 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/5.jpg - - - 304 - image/jpeg 42.6436ms
+2023-09-27 12:47:04.457 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-09-27 12:47:04.494 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.9374ms
+2023-09-27 12:47:08.034 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/Customer/Table - -
+2023-09-27 12:47:08.035 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.CustomerController.Table (HouseRentingSystem)"'
+2023-09-27 12:47:08.037 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "HouseRentingSystem.Controllers.CustomerController" ("HouseRentingSystem").
+2023-09-27 12:47:08.050 +02:00 [Information] Executing action method "HouseRentingSystem.Controllers.CustomerController.Table (HouseRentingSystem)" - Validation state: Valid
+2023-09-27 12:47:08.113 +02:00 [Information] Executed action method "HouseRentingSystem.Controllers.CustomerController.Table (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 62.9407ms.
+2023-09-27 12:47:08.114 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-27 12:47:08.178 +02:00 [Information] Executed ViewResult - view "Table" executed in 64.5957ms.
+2023-09-27 12:47:08.178 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.CustomerController.Table (HouseRentingSystem)" in 140.9965ms
+2023-09-27 12:47:08.178 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.CustomerController.Table (HouseRentingSystem)"'
+2023-09-27 12:47:08.180 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/Customer/Table - - - 200 - text/html;+charset=utf-8 145.8501ms
+2023-09-27 12:47:08.190 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-09-27 12:47:08.191 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-09-27 12:47:08.192 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 0.5457ms
+2023-09-27 12:47:08.194 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.5758ms
+2023-09-27 12:47:10.046 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/Order/Table - -
+2023-09-27 12:47:10.047 +02:00 [Information] Executing endpoint '"MyShop.Controllers.OrderController.Table (HouseRentingSystem)"'
+2023-09-27 12:47:10.049 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Order\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "MyShop.Controllers.OrderController" ("HouseRentingSystem").
+2023-09-27 12:47:10.062 +02:00 [Information] Executing action method "MyShop.Controllers.OrderController.Table (HouseRentingSystem)" - Validation state: Valid
+2023-09-27 12:47:10.069 +02:00 [Information] Executed action method "MyShop.Controllers.OrderController.Table (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 5.9912ms.
+2023-09-27 12:47:10.069 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-27 12:47:10.115 +02:00 [Information] Executed ViewResult - view "Table" executed in 45.7344ms.
+2023-09-27 12:47:10.115 +02:00 [Information] Executed action "MyShop.Controllers.OrderController.Table (HouseRentingSystem)" in 66.299ms
+2023-09-27 12:47:10.115 +02:00 [Information] Executed endpoint '"MyShop.Controllers.OrderController.Table (HouseRentingSystem)"'
+2023-09-27 12:47:10.117 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/Order/Table - - - 200 - text/html;+charset=utf-8 71.3775ms
+2023-09-27 12:47:10.125 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-09-27 12:47:10.125 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-09-27 12:47:10.125 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 0.4627ms
+2023-09-27 12:47:10.128 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.7802ms
