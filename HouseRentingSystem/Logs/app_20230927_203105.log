@@ -1,0 +1,37 @@
+2023-09-27 20:31:08.591 +02:00 [Information] User profile is available. Using '"C:\Users\unnis\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-27 20:31:08.816 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-09-27 20:31:08.818 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-09-27 20:31:08.827 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-09-27 20:31:08.830 +02:00 [Information] Hosting environment: "Development"
+2023-09-27 20:31:08.832 +02:00 [Information] Content root path: "C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\"
+2023-09-27 20:31:09.374 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/ - -
+2023-09-27 20:31:09.461 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 20:31:09.478 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 20:31:09.538 +02:00 [Information] Executing action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" - Validation state: Valid
+2023-09-27 20:31:09.544 +02:00 [Information] Executed action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7161ms.
+2023-09-27 20:31:09.555 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 20:31:09.752 +02:00 [Information] Executed ViewResult - view "Index" executed in 197.4457ms.
+2023-09-27 20:31:09.759 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 280.2322ms
+2023-09-27 20:31:09.760 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 20:31:09.791 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 421.6835ms
+2023-09-27 20:31:09.821 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-09-27 20:31:09.827 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 6.1566ms
+2023-09-27 20:31:09.844 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-09-27 20:31:09.864 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.7513ms
+2023-09-27 20:31:17.913 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js.map - -
+2023-09-27 20:31:17.936 +02:00 [Information] The file "/lib/bootstrap/js/bootstrap.js.map" was not modified
+2023-09-27 20:31:17.937 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js.map - - - 304 - text/plain 23.4444ms
+2023-09-27 20:31:21.099 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/ - -
+2023-09-27 20:31:21.100 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 20:31:21.100 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 20:31:21.155 +02:00 [Information] Executing action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" - Validation state: Valid
+2023-09-27 20:31:21.155 +02:00 [Information] Executed action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.081ms.
+2023-09-27 20:31:21.156 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 20:31:21.179 +02:00 [Information] Executed ViewResult - view "Index" executed in 23.4507ms.
+2023-09-27 20:31:21.179 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 78.9687ms
+2023-09-27 20:31:21.180 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 20:31:21.183 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 83.6511ms
+2023-09-27 20:31:21.192 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-09-27 20:31:21.199 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 6.7102ms
+2023-09-27 20:31:21.232 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-09-27 20:31:21.242 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.5296ms
