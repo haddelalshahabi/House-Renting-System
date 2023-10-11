@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,15 +11,20 @@
     <script src="~/lib/jquery-validate/jquery.validate.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     <script src="https://kit.fontawesome.com/0f8b312258.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="container-fluid">
             <div class="row align-items-center justify-content-between">
-                <div class="col-auto">
+                <div class="col-auto" style="display: flex; align-items: center;">
                     <!-- Logo Icon -->
-                    <i class="fa-brands fa-staylinked">Stay Spaces</i>
+                    <i class="fa-brands fa-staylinked" style="color: #A89968; font-size: 1.5rem;"></i>
+                    <span style="margin-left: 0.4rem; font-size: 1.2rem; color: #A89968;">Stay Spaces</span>
                 </div>
+
+
                 <div class="col-md-5">
                     <input type="text" class="form-control" placeholder="Search...">
                 </div>
@@ -52,16 +58,68 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Hytte</a>
+                                    <a class="nav-link" href="#">
+                                        <center>
+                                            <i class="fas fa-home fa-lg"></i>
+                                            <br> Hytte
+                                        </center>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Kupler</a>
+                                    <a class="nav-link" href="#">
+                                        <center>
+                                            <i class="fa-solid fa-igloo fa-lg"></i>
+                                            <br> Kupler
+                                        </center>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Nær skiløype/-bakke</a>
+                                    <a class="nav-link" href="#">
+                                        <center>
+                                            <i class="fa-brands fa-fort-awesome fa-lg"></i>
+                                            <br> Slott
+                                        </center>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Herskapshus</a>
+                                    <a class="nav-link" href="#">
+                                        <center>
+                                            <i class="fa-solid fa-umbrella-beach fa-lg"></i>
+                                            <br> På stranden
+                                        </center>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <center>
+                                            <i class="fa-solid fa-tents fa-lg"></i>
+                                            <br> camping
+                                        </center>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <center>
+                                            <i class="fa-solid fa-vihara fa-lg"></i>
+                                            <br> Hanoker
+                                        </center>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <center>
+                                            <i class="fa-solid fa-bed fa-lg"></i>
+                                            <br> Rom
+                                        </center>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <center>
+                                            <i class="fa-solid fa-person-skiing fa-lg"></i>
+                                            <br> Nær skiløype
+                                        </center>
+                                    </a>
                                 </li>
                             </ul>
                             <!-- Filter options -->
@@ -83,6 +141,159 @@
 
     <div class="container">
         <main role="main" class="pb-3">
+
+            <!-- Multiple listings -->
+            <section class="py-4">
+                <h2>Listings</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 position-relative">
+                            <!-- Added position-relative class -->
+                            <img src="path_to_image_for_Modum" class="card-img-top" alt="Modum">
+                            <!-- Heart Button -->
+                            <button class="btn position-absolute top-0 end-0" style="background-color: transparent; border: none;">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </button>
+                            <div class="card-body">
+                                <h5 class="card-title">Modum, Norge</h5>
+                                <p class="card-text">Individuell vert</p>
+                                <p class="card-text">Available dates: 1-6. nov.</p>
+                                <p class="card-text">Price: 753 kr NOK natt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 position-relative">
+                            <!-- Added position-relative class -->
+                            <img src="path_to_image_for_Modum" class="card-img-top" alt="Modum">
+                            <!-- Heart Button -->
+                            <button class="btn position-absolute top-0 end-0" style="background-color: transparent; border: none;">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </button>
+                            <div class="card-body">
+                                <h5 class="card-title">Modum, Norge</h5>
+                                <p class="card-text">Individuell vert</p>
+                                <p class="card-text">Available dates: 1-6. nov.</p>
+                                <p class="card-text">Price: 753 kr NOK natt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 position-relative">
+                            <!-- Added position-relative class -->
+                            <img src="path_to_image_for_Modum" class="card-img-top" alt="Modum">
+                            <!-- Heart Button -->
+                            <button class="btn position-absolute top-0 end-0" style="background-color: transparent; border: none;">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </button>
+                            <div class="card-body">
+                                <h5 class="card-title">Modum, Norge</h5>
+                                <p class="card-text">Individuell vert</p>
+                                <p class="card-text">Available dates: 1-6. nov.</p>
+                                <p class="card-text">Price: 753 kr NOK natt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 position-relative">
+                            <!-- Added position-relative class -->
+                            <img src="path_to_image_for_Modum" class="card-img-top" alt="Modum">
+                            <!-- Heart Button -->
+                            <button class="btn position-absolute top-0 end-0" style="background-color: transparent; border: none;">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </button>
+                            <div class="card-body">
+                                <h5 class="card-title">Modum, Norge</h5>
+                                <p class="card-text">Individuell vert</p>
+                                <p class="card-text">Available dates: 1-6. nov.</p>
+                                <p class="card-text">Price: 753 kr NOK natt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 position-relative">
+                            <!-- Added position-relative class -->
+                            <img src="path_to_image_for_Modum" class="card-img-top" alt="Modum">
+                            <!-- Heart Button -->
+                            <button class="btn position-absolute top-0 end-0" style="background-color: transparent; border: none;">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </button>
+                            <div class="card-body">
+                                <h5 class="card-title">Modum, Norge</h5>
+                                <p class="card-text">Individuell vert</p>
+                                <p class="card-text">Available dates: 1-6. nov.</p>
+                                <p class="card-text">Price: 753 kr NOK natt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 position-relative">
+                            <!-- Added position-relative class -->
+                            <img src="path_to_image_for_Modum" class="card-img-top" alt="Modum">
+                            <!-- Heart Button -->
+                            <button class="btn position-absolute top-0 end-0" style="background-color: transparent; border: none;">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </button>
+                            <div class="card-body">
+                                <h5 class="card-title">Modum, Norge</h5>
+                                <p class="card-text">Individuell vert</p>
+                                <p class="card-text">Available dates: 1-6. nov.</p>
+                                <p class="card-text">Price: 753 kr NOK natt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 position-relative">
+                            <!-- Added position-relative class -->
+                            <img src="path_to_image_for_Modum" class="card-img-top" alt="Modum">
+                            <!-- Heart Button -->
+                            <button class="btn position-absolute top-0 end-0" style="background-color: transparent; border: none;">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </button>
+                            <div class="card-body">
+                                <h5 class="card-title">Modum, Norge</h5>
+                                <p class="card-text">Individuell vert</p>
+                                <p class="card-text">Available dates: 1-6. nov.</p>
+                                <p class="card-text">Price: 753 kr NOK natt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 position-relative">
+                            <!-- Added position-relative class -->
+                            <img src="path_to_image_for_Modum" class="card-img-top" alt="Modum">
+                            <!-- Heart Button -->
+                            <button class="btn position-absolute top-0 end-0" style="background-color: transparent; border: none;">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </button>
+                            <div class="card-body">
+                                <h5 class="card-title">Modum, Norge</h5>
+                                <p class="card-text">Individuell vert</p>
+                                <p class="card-text">Available dates: 1-6. nov.</p>
+                                <p class="card-text">Price: 753 kr NOK natt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 position-relative">
+                            <!-- Added position-relative class -->
+                            <img src="path_to_image_for_Modum" class="card-img-top" alt="Modum">
+                            <!-- Heart Button -->
+                            <button class="btn position-absolute top-0 end-0" style="background-color: transparent; border: none;">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </button>
+                            <div class="card-body">
+                                <h5 class="card-title">Modum, Norge</h5>
+                                <p class="card-text">Individuell vert</p>
+                                <p class="card-text">Available dates: 1-6. nov.</p>
+                                <p class="card-text">Price: 753 kr NOK natt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more listings as needed by copying the above structure -->
+                </div>
+            </section>
+
             <!-- Add content of main section here -->
             @RenderBody()
         </main>
