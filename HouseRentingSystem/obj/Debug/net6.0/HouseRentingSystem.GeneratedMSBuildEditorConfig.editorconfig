@@ -24,28 +24,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Item/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxDcmVhdGUuY3NodG1s
+[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/House/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Item/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZWxldGUuY3NodG1s
+[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/House/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Item/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZXRhaWxzLmNzaHRtbA==
+[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/House/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Item/Grid.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxHcmlkLmNzaHRtbA==
+[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/House/Grid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VcR3JpZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Item/Table.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxUYWJsZS5jc2h0bWw=
+[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/House/Table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VcVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Item/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxVcGRhdGUuY3NodG1s
+[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/House/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Order/CreateOrderItem.cshtml]
@@ -64,16 +64,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdXN0b21lclRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_ItemCard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JdGVtQ2FyZC5jc2h0bWw=
+[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_HouseCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib3VzZUNhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_ItemTable.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JdGVtVGFibGUuY3NodG1s
+[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_HousesTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib3VzZXNUYWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_OrderItemTable.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PcmRlckl0ZW1UYWJsZS5jc2h0bWw=
+[C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/Shared/_OrderTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PcmRlclRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/unnis/OneDrive - OsloMet/5.semester/ITPE3200 Webappplikasjoner/Projects/HouseRentingSystem/HouseRentingSystem/Views/_ViewImports.cshtml]

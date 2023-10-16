@@ -1,9 +1,13 @@
-﻿@{
-    ViewData["Title"] = "Stay Spaces";
-}
+﻿@model HouseRentingSystem.ViewModels.ItemListViewModel
 
 <div class="text-center">
-    <h1 class="display-4">Stay Spaces</h1>
+    <h1 class="display-4">Welcome</h1>
 </div>
+<a type="button" class="btn btn-primary" asp-controller="House" asp-action="Tabele">Table View</a>
 
-<partial name="_Carousel" />
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var item in Model.House)
+    {
+        <partial name="_HouseCard" model="item" />
+    }
+</div>

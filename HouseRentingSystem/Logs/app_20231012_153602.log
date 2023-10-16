@@ -1,0 +1,24 @@
+2023-10-12 15:36:03.398 +02:00 [Information] User profile is available. Using '"/Users/haddelalshahabi/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2023-10-12 15:36:03.604 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-10-12 15:36:03.605 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-10-12 15:36:03.608 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-10-12 15:36:03.608 +02:00 [Information] Hosting environment: "Development"
+2023-10-12 15:36:03.609 +02:00 [Information] Content root path: "/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem"
+2023-10-12 15:36:04.850 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-10-12 15:36:04.863 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-10-12 15:36:04.867 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-10-12 15:36:04.871 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-10-12 15:36:04.904 +02:00 [Information] Executed ViewResult - view "Index" executed in 33.0827ms.
+2023-10-12 15:36:04.905 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 37.548ms
+2023-10-12 15:36:04.905 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-10-12 15:36:04.907 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 56.6147ms
+2023-10-12 15:36:04.916 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-10-12 15:36:04.917 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-10-12 15:36:04.972 +02:00 [Information] The file "/lib/bootstrap/js/bootstrap.js" was not modified
+2023-10-12 15:36:04.973 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 304 - text/javascript 56.5799ms
+2023-10-12 15:36:04.999 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/path_to_image_for_Modum - -
+2023-10-12 15:36:05.021 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/path_to_image_for_Modum - - - 404 0 - 22.3402ms
+2023-10-12 15:36:05.050 +02:00 [Information] Sending file. Request path: '"/lib/jquery/jquery.js"'. Physical path: '"/Users/haddelalshahabi/WebapplikasjonerProjects/HouseRentingSystem/HouseRentingSystem/wwwroot/lib/jquery/jquery.js"'
+2023-10-12 15:36:05.051 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - - - 200 284996 text/javascript 134.1008ms
+2023-10-12 15:36:05.051 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/path_to_image_for_Modum - -
+2023-10-12 15:36:05.051 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/path_to_image_for_Modum - - - 404 0 - 0.4781ms

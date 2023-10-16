@@ -1,0 +1,34 @@
+2023-10-09 20:17:47.113 +02:00 [Information] User profile is available. Using '"C:\Users\berry\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 20:17:47.280 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-10-09 20:17:47.283 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-10-09 20:17:47.290 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-10-09 20:17:47.293 +02:00 [Information] Hosting environment: "Development"
+2023-10-09 20:17:47.296 +02:00 [Information] Content root path: "C:\Users\berry\OneDrive - OsloMet\Webappikasjon\Project\HouseRentingSystem\"
+2023-10-09 20:17:48.006 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/ - -
+2023-10-09 20:17:48.065 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-10-09 20:17:48.078 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-10-09 20:17:48.131 +02:00 [Information] Executing action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" - Validation state: Valid
+2023-10-09 20:17:48.140 +02:00 [Information] Executed action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.6711ms.
+2023-10-09 20:17:48.155 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-10-09 20:17:48.358 +02:00 [Information] Executed ViewResult - view "Index" executed in 206.7572ms.
+2023-10-09 20:17:48.363 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 284.5273ms
+2023-10-09 20:17:48.363 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-10-09 20:17:48.392 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 391.7746ms
+2023-10-09 20:17:48.407 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-10-09 20:17:48.411 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 4.3714ms
+2023-10-09 20:17:48.414 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/path_to_hytte_logo - -
+2023-10-09 20:17:48.417 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/path_to_hytte_logo - - - 404 0 - 3.1237ms
+2023-10-09 20:17:48.420 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/path_to_kupler_logo - -
+2023-10-09 20:17:48.421 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/path_to_kupler_logo - - - 404 0 - 0.7783ms
+2023-10-09 20:17:48.423 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/path_to_skiloype_logo - -
+2023-10-09 20:17:48.423 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/path_to_skiloype_logo - - - 404 0 - 0.2867ms
+2023-10-09 20:17:48.425 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/path_to_herskapshus_logo - -
+2023-10-09 20:17:48.426 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/path_to_herskapshus_logo - - - 404 0 - 0.1198ms
+2023-10-09 20:17:48.428 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/path_to_image_for_Modum - -
+2023-10-09 20:17:48.428 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/path_to_image_for_Modum - - - 404 0 - 0.2734ms
+2023-10-09 20:17:48.430 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/path_to_image_for_Oslo - -
+2023-10-09 20:17:48.430 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/path_to_image_for_Oslo - - - 404 0 - 0.2427ms
+2023-10-09 20:17:48.432 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-10-09 20:17:48.448 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.6224ms
+2023-10-09 20:17:48.553 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/path_to_image_for_Oslo - -
+2023-10-09 20:17:48.554 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/path_to_image_for_Oslo - - - 404 0 - 0.9100ms

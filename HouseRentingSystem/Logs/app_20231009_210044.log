@@ -1,0 +1,38 @@
+2023-10-09 21:00:47.017 +02:00 [Information] User profile is available. Using '"C:\Users\berry\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 21:00:47.199 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-10-09 21:00:47.201 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-10-09 21:00:47.208 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-10-09 21:00:47.212 +02:00 [Information] Hosting environment: "Development"
+2023-10-09 21:00:47.214 +02:00 [Information] Content root path: "C:\Users\berry\OneDrive - OsloMet\Webappikasjon\Project\HouseRentingSystem\"
+2023-10-09 21:00:47.680 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/ - -
+2023-10-09 21:00:47.739 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-10-09 21:00:47.751 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-10-09 21:00:47.812 +02:00 [Information] Executing action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" - Validation state: Valid
+2023-10-09 21:00:47.818 +02:00 [Information] Executed action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.5348ms.
+2023-10-09 21:00:47.827 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-10-09 21:00:47.988 +02:00 [Information] Executed ViewResult - view "Index" executed in 164.1869ms.
+2023-10-09 21:00:47.995 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 243.651ms
+2023-10-09 21:00:47.996 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-10-09 21:00:48.021 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 345.8793ms
+2023-10-09 21:00:48.035 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-10-09 21:00:48.035 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery-validate/jquery.validate.js - -
+2023-10-09 21:00:48.035 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-10-09 21:00:48.035 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-10-09 21:00:48.051 +02:00 [Information] The file "/lib/jquery/jquery.js" was not modified
+2023-10-09 21:00:48.051 +02:00 [Information] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified
+2023-10-09 21:00:48.051 +02:00 [Information] The file "/lib/jquery-validate/jquery.validate.js" was not modified
+2023-10-09 21:00:48.051 +02:00 [Information] The file "/lib/bootstrap/js/bootstrap.js" was not modified
+2023-10-09 21:00:48.052 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery/jquery.js - - - 304 - application/javascript 16.7441ms
+2023-10-09 21:00:48.052 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 304 - application/javascript 16.7845ms
+2023-10-09 21:00:48.052 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery-validate/jquery.validate.js - - - 304 - application/javascript 16.7985ms
+2023-10-09 21:00:48.052 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 304 - application/javascript 16.6084ms
+2023-10-09 21:00:48.062 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-10-09 21:00:48.066 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 3.6858ms
+2023-10-09 21:00:48.077 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/path_to_image_for_Modum - -
+2023-10-09 21:00:48.079 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/path_to_image_for_Modum - - - 404 0 - 1.1122ms
+2023-10-09 21:00:48.081 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/path_to_image_for_Oslo - -
+2023-10-09 21:00:48.082 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/path_to_image_for_Oslo - - - 404 0 - 0.7496ms
+2023-10-09 21:00:48.084 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-10-09 21:00:48.101 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.7414ms
+2023-10-09 21:00:48.244 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/path_to_image_for_Oslo - -
+2023-10-09 21:00:48.245 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/path_to_image_for_Oslo - - - 404 0 - 0.2246ms

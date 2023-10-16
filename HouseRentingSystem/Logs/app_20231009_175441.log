@@ -1,0 +1,32 @@
+2023-10-09 17:54:45.365 +02:00 [Information] User profile is available. Using '"C:\Users\berry\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 17:54:45.804 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-10-09 17:54:45.806 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-10-09 17:54:45.812 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-10-09 17:54:45.814 +02:00 [Information] Hosting environment: "Development"
+2023-10-09 17:54:45.816 +02:00 [Information] Content root path: "C:\Users\berry\OneDrive - OsloMet\Webappikasjon\Project\HouseRentingSystem\"
+2023-10-09 17:54:46.640 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/ - -
+2023-10-09 17:54:46.727 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-10-09 17:54:46.741 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-10-09 17:54:46.878 +02:00 [Information] Executing action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" - Validation state: Valid
+2023-10-09 17:54:46.884 +02:00 [Information] Executed action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.5664ms.
+2023-10-09 17:54:46.893 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-10-09 17:54:47.199 +02:00 [Information] Executed ViewResult - view "Index" executed in 305.7087ms.
+2023-10-09 17:54:47.204 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 462.8294ms
+2023-10-09 17:54:47.205 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-10-09 17:54:47.232 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 595.1812ms
+2023-10-09 17:54:47.243 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-10-09 17:54:47.243 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery-validate/jquery.validate.js - -
+2023-10-09 17:54:47.243 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-10-09 17:54:47.243 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-10-09 17:54:47.243 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-10-09 17:54:47.257 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 13.7373ms
+2023-10-09 17:54:47.289 +02:00 [Information] The file "/lib/bootstrap/js/bootstrap.js" was not modified
+2023-10-09 17:54:47.289 +02:00 [Information] The file "/lib/jquery/jquery.js" was not modified
+2023-10-09 17:54:47.289 +02:00 [Information] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified
+2023-10-09 17:54:47.289 +02:00 [Information] The file "/lib/jquery-validate/jquery.validate.js" was not modified
+2023-10-09 17:54:47.289 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 304 - application/javascript 46.6050ms
+2023-10-09 17:54:47.289 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery-validate/jquery.validate.js - - - 304 - application/javascript 46.6884ms
+2023-10-09 17:54:47.289 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 304 - application/javascript 46.7562ms
+2023-10-09 17:54:47.289 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery/jquery.js - - - 304 - application/javascript 46.5390ms
+2023-10-09 17:54:47.304 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-10-09 17:54:47.328 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.2196ms

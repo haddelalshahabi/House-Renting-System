@@ -1,6 +1,15 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+:root[b-rajcmqn5q3] {
+    --text-color: #333;
+}
+
+body[b-rajcmqn5q3], h1[b-rajcmqn5q3], h2[b-rajcmqn5q3], h3[b-rajcmqn5q3], h4[b-rajcmqn5q3], h5[b-rajcmqn5q3], h6[b-rajcmqn5q3] {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color);
+}
+
 a.navbar-brand[b-rajcmqn5q3] {
     white-space: normal;
     text-align: center;

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<HouseRentingSystem.Models.Order>
+
+<h2>Order Overview</h2>
+
+@foreach (var order in Model)
+{
+    <section class="order-section">
+        <header class="order-header">
+            <h4>Order ID: @order.OrderId</h4>
+        </header>
+
+        <article>
+            <table class='table order-table'>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Paid Through</th>
+                        <th>Customer</th>
+                        <th>Paid Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@order.Date</td>
+                        <td>@order.PaymentMethod</td>
+                        <td>@order.CustomerName</td>
+                        <td>@order.PaidAmount</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="action-buttons">
+                <a class="btn btn-primary" asp-controller="Order" asp-action="Update" asp-route-id="@order.OrderId">Update</a>
+                <a class="btn btn-danger" asp-controller="Order" asp-action="Delete" asp-route-id="@order.OrderId">Delete</a>
+            </div>
+        </article>
+    </section>
+}
