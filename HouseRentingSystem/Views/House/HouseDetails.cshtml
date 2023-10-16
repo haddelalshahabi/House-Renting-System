@@ -1,0 +1,32 @@
+﻿@model HouseRentingSystem.Models.House
+
+<h3 class="my-5">
+    @Model.Address
+</h3>
+
+<div class="row gx-5">
+    <img alt="@Model.ImageUrl" src="@Model.ImageUrl" class="img-fluid col-5" />
+    <div class="card-body">
+        <h5 class="card-title">House Details</h5>
+        <p class="card-text">Area: <span class="text-muted">@Model.Area</span></p>
+        <p class="card-text">City: <span class="text-muted">@Model.City</span></p>
+        <p class="card-text">Price: <span class="text-muted">@Model.Price.ToString("0.00 NOK")</span></p>
+        <p class="card-text">Number of Rooms: <span class="text-muted">@Model.NumberOfRooms</span></p>
+        <p class="card-text">House Description: <span class="text-muted">@Model.Description</span></p>
+        <p class="card-text">Lease Duration: <span class="text-muted">@Model.LeaseDuration</span></p>
+        <p class="card-text">Utilities Included: <span class="text-muted">@Model.UtilitiesIncluded</span></p>
+        <p class="card-text">Parking Available: <span class="text-muted">@Model.HasParking</span></p>
+        <p class="card-text">Furnished: <span class="text-muted">@Model.IsFurnished</span></p>
+        <p class="card-text">Pet Friendly: <span class="text-muted">@Model.PetFriendly</span></p>
+        <p class="card-text">Amenities: <span class="text-muted">@Model.Amenities</span></p>
+        <p class="card-text">Number of Rooms: <span class="text-muted">@Model.RoomCount</span></p>
+        <p class="card-text">Availability: <span class="text-muted">@Model.IsAvailable</span></p>
+
+        <form asp-controller="Order" asp-action="createOrder">
+            <button type="submit" class="btn btn-primary"
+                    asp-controller="Order" asp-action="createOrder" asp-route-id="@Model.HouseId">
+                Order
+            </button>
+        </form>
+    </div>
+</div>

@@ -1,127 +1,147 @@
 ﻿using HouseRentingSystem.Models;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.SignalR;
+using System;
 
-namespace HouseRentingSystem.Models;
-
-public static class DBInit
+namespace HouseRentingSystem.DAL
 {
-    public static void Seed(IApplicationBuilder app)
+    public class DBInit
     {
-        using var serviceScope = app.ApplicationServices.CreateScope();
-        ItemDbContext context = serviceScope.ServiceProvider.GetRequiredService<ItemDbContext>();
-        // Kommenter bort EnsureDeleted() etter at elementene er fikset.
-        //context.Database.EnsureDeleted();
-        context.Database.EnsureCreated();
-
-        if (!context.Items.Any())
+        public static void Seed(IApplicationBuilder app)
         {
-            var items = new List<Item>
-            {
-                new Item
-                {
-                    Name = "House 1",
-                    Price = 150,
-                    Description = "Delicious Italian dish with a thin crust topped with tomato sauce, cheese, and various toppings.",
-                    ImageUrl = "/images/1.jpg"
-                },
-                new Item
-                {
-                    Name = "House 2",
-                    Price = 20,
-                    Description = "Crispy and succulent chicken leg that is deep-fried to perfection, often served as a popular fast food item.",
-                    ImageUrl = "/images/2.jpg"
-                },
-                new Item
-                {
-                    Name = "House 3",
-                    Price = 50,
-                    Description = "Crispy, golden-brown potato slices seasoned with salt and often served as a popular side dish or snack.",
-                    ImageUrl = "/images/3.jpg"
-                },
-                new Item
-                {
-                    Name = "House 4",
-                    Price = 250,
-                    Description = "Tender and flavorful ribs grilled to perfection, usually served with barbecue sauce.",
-                    ImageUrl = "/images/4.jpg"
-                },
-                new Item
-                {
-                    Name = "House 5",
-                    Price = 150,
-                    Description = "Tortillas filled with various ingredients such as seasoned meat, vegetables, and salsa, folded into a delicious handheld meal.",
-                    ImageUrl = "/images/5.jpg"
-                },
-                new Item
-                {
-                    Name = "House 6",
-                    Price = 180,
-                    Description = "Classic British dish featuring battered and deep-fried fish served with thick-cut fried potatoes.",
-                    ImageUrl = "/images/6.jpg"
-                },
-                new Item
-                {
-                    Name = "House 7",
-                    Price = 50,
-                    Description = "Refreshing alcoholic beverage made from fermented apple juice, available in various flavors.",
-                    ImageUrl = "/images/7.jpg"
-                },
-                new Item
-                {
-                    Name = "House 8",
-                    Price = 30,
-                    Description = "Popular carbonated soft drink known for its sweet and refreshing taste.",
-                    ImageUrl = "/images/8.jpg"
-                },
-            };
-            context.AddRange(items);
-            context.SaveChanges();
-        }
+            using var serviceScope = app.ApplicationServices.CreateScope();
+            ItemDbContext context = serviceScope.ServiceProvider.GetRequiredService<ItemDbContext>();
+            context.Database.EnsureCreated();
 
-        if (!context.Customers.Any())
-        {
-            var customers = new List<Customer>
+            if (!context.user.Any() && !context.customer.Any() && !context.owner.Any())
             {
-                new Customer { Name = "Alice Hansen", Address = "Osloveien 1"},
-                new Customer { Name = "Bob Johansen", Address = "Oslomet gata 2"},
-            };
-            context.AddRange(customers);
-            context.SaveChanges();
-        }
+                var user = new User
+                {
+                    Name = "Jonas Frankstein",
+                    Address = "Holbergsplass3",
+                    Email = "Jonas1@gmail.com",
+                    BirthDate = new DateTime(1993, 6, 3),
+                    PhoneNumber = 93655711
+                };
+                var customer = new Customer
+                {
+                    User = user
+                };
+                var owner = new Owner
+                {
+                    User = user,
+                    AccountNumber = 52877738481,
+                    AdCount = 0
+                };
 
-        if (!context.Orders.Any())
-        {
-            var orders = new List<Order>
-            {
-                new Order {OrderDate = DateTime.Today.ToString(), CustomerId = 1,},
-                new Order {OrderDate = DateTime.Today.ToString(), CustomerId = 2,},
-            };
-            context.AddRange(orders);
-            context.SaveChanges();
-        }
-
-        if (!context.OrderItems.Any())
-        {
-            var orderItems = new List<OrderItem>
-            {
-                new OrderItem { ItemId = 1, Quantity = 2, OrderId = 1},
-                new OrderItem { ItemId = 2, Quantity = 1, OrderId = 1},
-                new OrderItem { ItemId = 3, Quantity = 4, OrderId = 2},
-            };
-            foreach (var orderItem in orderItems)
-            {
-                var item = context.Items.Find(orderItem.ItemId);
-                orderItem.OrderItemPrice = orderItem.Quantity * item?.Price ?? 0;
+                context.AddRange(customer, owner);
+                context.SaveChanges();
             }
-            context.AddRange(orderItems);
-            context.SaveChanges();
-        }
 
-        var ordersToUpdate = context.Orders.Include(o => o.OrderItems);
-        foreach (var order in ordersToUpdate)
-        {
-            order.TotalPrice = order.OrderItems?.Sum(oi => oi.OrderItemPrice) ?? 0;
+            if (!context.house.Any())
+            {
+                var house = new List<House>
+                {
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                };
+
+                var user = new User
+                {
+                    Name = "Leif Hansen ",
+                    Address = "Nydalenveien33",
+                    Email = "leif@gmail.com",
+                    BirthDate = new DateTime(1995, 2, 1),
+                    PhoneNumber = 456789546,
+                };
+
+                var owner = new Owner
+                {
+                    User = user,
+                    AccountNumber = 4567899567,
+                    AdCount = 0,
+                    HouseList = houses
+                };
+
+                context.AddRange(owner);
+                context.SaveChanges();
+            }
+
+            if (!context.order.Any())
+            {
+                var user = new User
+                {
+                    Name = "Andreas Tøen",
+                    Address = "adgerveien22",
+                    Email = "andreas1@gmail.com",
+                    BirthDate = new DateTime(1983, 7, 2),
+                    PhoneNumber = 45678788
+                };
+
+                var customer = new Customer
+                {
+                    User = user
+                };
+
+                context.Add(customer);
+                context.SaveChanges();
+
+                var order = new List<Order>
+                {
+                    new Order
+                    {
+                        Date = DateTime.Now,
+                        PaymentMethod = "Card",
+                        CustomerID = customer.CustomerID
+                    },
+                    new Order
+                    {
+                        Date = DateTime.Now,
+                        PaymentMethod = "Klarna",
+                        CustomerID = customer.CustomerID
+                    }
+                };
+
+                var owner = new Owner
+                {
+                    User = user,
+                    AccountNumber = 33333333333,
+                    AdCount = 0
+                };
+
+                var house = new House
+                {
+                    Address = "Holbergsplass3",
+                    Area = 200,
+                    Description = "srdtfcygvuhbjkla",
+                    City = "Oslo",
+                    IsAvailable = true,
+                    Price = 1600,
+                    RoomCount = 4,
+                    IsFurnished = true,
+                    HasParking = false,
+                    ImageURL = "~/Bilder/1.jpg",
+                    Owner = owner
+                };
+
+                context.Add(house);
+                context.SaveChanges();
+
+                foreach (var o in order)
+                {
+                    o.HouseId = house.HouseId;
+                }
+
+                context.AddRange(order);
+                context.SaveChanges();
+            }
         }
-        context.SaveChanges();
     }
 }

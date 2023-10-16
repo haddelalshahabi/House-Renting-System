@@ -20,6 +20,8 @@
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Customer\" />
     <Folder Include="Views\Order\" />
+    <Folder Include="wwwroot\CSS\" />
+    <Folder Include="wwwroot\JavaScript\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.22" />
@@ -34,5 +36,9 @@
     <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.22" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.22" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\CSS\" />
+    <Content Remove="wwwroot\JavaScript\" />
   </ItemGroup>
 </Project>

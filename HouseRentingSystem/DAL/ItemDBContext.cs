@@ -1,22 +1,38 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Castle.Core.Resource;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using HouseRentingSystem.Models;
 
-namespace HouseRentingSystem.Models;
 
-public class ItemDbContext : IdentityDbContext
+namespace HouseRentingSystem.DAL
 {
-    public ItemDbContext(DbContextOptions<ItemDbContext> options) : base(options)
-    {
-        //Database.EnsureCreated();
-    }
 
-    public DbSet<Item> Items { get; set; }
-    public DbSet<Customer> Customers { get; set; }
-    public DbSet<Order> Orders { get; set; }
-    public DbSet<OrderItem> OrderItems { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    public class ItemDbContext : IdentityDbContext
     {
-        optionsBuilder.UseLazyLoadingProxies();
+        public ItemDbContext(DbContextOptions<ItemDbContext> options) : base(options)
+        {
+     
+        }
+
+        public DbSet<User> user { get; set; }
+        public DbSet<House> house { get; set; }
+        public DbSet<Customer> customer { get; set; }
+        public DbSet<Order> order { get; set; }
+        public DbSet<Owner> owner { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<IdentityUserLogin<string>>()
+           .HasKey(l => new { l.LoginProvider, l.ProviderKey });
+            modelBuilder.Entity<Customer>().ToTable("customer");
+            modelBuilder.Entity<Owner>().ToTable("owner");
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies();
+        }
     }
 }

@@ -1,0 +1,36 @@
+﻿@model HouseRentingSystem.Models.Customer
+
+<h2>Update Customer</h2>
+
+<form asp-action="Update">
+    <input type="hidden" asp-for="User.UserId" />
+
+    <div class="form-group">
+        <label asp-for="User.Name"></label><span class="text-danger">*</span>
+        <input asp-for="User.Name" class="form-control" />
+        <span asp-validation-for="User.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.DateOfBirth"></label><span class="text-danger">*</span>
+        <input asp-for="User.DateOfBirth" class="form-control" />
+        <span asp-validation-for="User.DateOfBirth" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.Address"></label>
+        <input asp-for="User.Address" class="form-control" />
+        <span asp-validation-for="User.Address" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.PhoneNumber"></label>
+        <input type="tel" asp-for="User.PhoneNumber" class="form-control" />
+        <span asp-validation-for="User.PhoneNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.Email"></label>
+        <input type="email" asp-for="User.Email" class="form-control" />
+        <span asp-validation-for="User.Email" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Table" class="btn btn-secondary">Cancel</a>
+</form>
