@@ -1,16 +1,31 @@
-﻿using HouseRentingSystem.Models;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using HouseRentingSystem.Models;
 
-namespace HouseRentingSystem.Models;
-
-public class Order
+namespace HouseRentingSystem.Models
 {
-    public int OrderId { get; set; }
-    public string OrderDate { get; set; } = string.Empty;
-    public int CustomerId { get; set; }
-    // navigation property
-    public virtual Customer Customer { set; get; } = default!;
-    // navigation property
-    public virtual List<OrderItem>? OrderItems { get; set; }
-    public decimal TotalPrice { get; set; }
-}
+    public class Order
+    {
+        public Order() { }
 
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ordreId { get; set; }
+
+        public DateTime Dato { get; set; }
+
+        [StringLength(200)]
+        public string paymentMethod { get; set; }
+
+        public virtual House house { get; set; }
+        public int HouseId { get; set; }
+
+        public int CustomerID { get; set; }
+        public virtual Customer customer { get; set; }
+
+        // Original fields from "fil 2" preserved
+        public virtual List<OrderItem>? OrderItems { get; set; }
+        public decimal TotalPrice { get; set; }
+    }
+}

@@ -1,14 +1,23 @@
-﻿using HouseRentingSystem.Models;
+﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
+using HouseRentingSystem.Models;
+using System;
 
-namespace HouseRentingSystem.Models;
-
-public class Customer
+namespace HouseRentingSystem.Models
 {
-    public int CustomerId { get; set; }
-    public string Name { get; set; } = string.Empty;
-    public string Address { get; set; } = string.Empty;
-    // navigation property
-    public virtual List<Order>? Orders { get; set; }
+    public class Customer
+    {
+        public Customer() { }
+
+        [NotNull]
+        public virtual Users Individual { get; set; }
+
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int CustomerId { get; set; }
+
+        public virtual List<Order> Orders { get; set; }
+    }
 }
-
-
