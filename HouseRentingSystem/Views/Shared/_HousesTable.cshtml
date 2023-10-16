@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Item>
+
+<div class="container">
+    <table class='table table-striped'>
+        <tr>
+            <th>ID</th>
+            <th>OwnerID</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Availability</th>
+            <th>LeaseDuration</th>
+            <th>UtilitiesIncluded</th>
+            <th>Image</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Area</th>
+            <th>NumberOfRooms</th>
+            <th>IsFurnished</th>
+            <th>HasParking</th>
+            <th>PetFriendly</th>
+            <th>Amenities</th>
+            <th>Actions</th>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.HouseID</td>
+                <td>@item.OwnerID</td>
+                <td>@item.Price.ToString("0.00 NOK")</td>
+                <td>@item.Description</td>
+                <td>@item.Availability</td>
+                <td>@item.LeaseDuration</td>
+                <td>@item.UtilitiesIncluded</td>
+                <td>
+                    <img src="@item.ImageUrl" alt="Item Image" style="max-width: 80px; max-height: 80px;" />
+                </td>
+                <td>@item.Address</td>
+                <td>@item.City</td>
+                <td>@item.Area</td>
+                <td>@item.NumberOfRooms</td>
+                <td>@item.IsFurnished</td>
+                <td>@item.HasParking</td>
+                <td>@item.PetFriendly</td>
+                <td>@item.Amenities</td>
+
+                <td>
+                    <a asp-action="UpdateHouse" asp-route-id="@item.HouseID">Update</a>
+                    <a asp-action="DeleteHouse" asp-route-id="@item.HouseID">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+    <p>
+        <a class="btn btn-secondary"
+           asp-controller="House"
+           asp-action="Create">Create New House</a>
+    </p>
+</div>

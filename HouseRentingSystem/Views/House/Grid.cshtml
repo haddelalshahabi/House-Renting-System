@@ -1,10 +1,10 @@
-﻿@model ItemListViewModel
+﻿@model HouseRentingSystem.ViewModels.ItemListViewModel
 
-<h1>List of Renting Items (@Model.CurrentViewName View)</h1>
+<h1>Welcome</h1>
 <a href="/Item/Table">Table View</a>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
-    @foreach (var item in Model.Items)
+    @foreach (var item in Model.House)
     {
         <partial name="_ItemCard" model="item" />
     }
