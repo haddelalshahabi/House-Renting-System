@@ -1,80 +1,127 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using HouseRentingSystem.Models;
-using HouseRentingSystem.ViewModels;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using HouseRentingSystem.Services; // Assuming you have a service similar to OrdreInterface
+using HouseRentingSystem.Models; // For the Order and House models
+using HouseRentingSystem.ViewModels; // For the ItemListViewModel
+using Microsoft.Extensions.Logging; // For the ILogger
 
-namespace MyShop.Controllers;
-
-public class OrderController : Controller
+namespace HouseRentingSystem.Controllers
 {
-    private readonly ItemDbContext _itemDbContext;
-
-    public OrderController(ItemDbContext itemDbContext)
+    public class OrderController : Controller
     {
-        _itemDbContext = itemDbContext;
-    }
+        private readonly ILogger<OrderController> _orderLogger;
+        private readonly OrderInterface _orderInterface; // This service replaces OrdreInterface
+        private readonly HouseInterface _houseInterface; // This service is similar to HusInterface
+        private readonly Receipt _receiptInterface; // Assuming you have a similar service for generating receipts
 
-    public async Task<IActionResult> Table()
-    {
-        List<Order> orders = await _itemDbContext.Orders.ToListAsync();
-        return View(orders);
-    }
-
-    [HttpGet]
-    public async Task<IActionResult> CreateOrderItem()
-    {
-        var items = await _itemDbContext.Items.ToListAsync();
-        var orders = await _itemDbContext.Orders.ToListAsync();
-        var createOrderItemViewModel = new CreateOrderItemViewModel
+        public OrderController(OrderInterface orderInterface, ILogger<OrderController> logger, HouseInterface houseInterface, Receipt receiptInterface)
         {
-            OrderItem = new OrderItem(),
+            _orderInterface = orderInterface;
+            _orderLogger = logger;
+            _houseInterface = houseInterface;
+            _receiptInterface = receiptInterface;
+        }
 
-            ItemSelectList = items.Select(item => new SelectListItem
-            {
-                Value = item.ItemId.ToString(),
-                Text = item.ItemId.ToString() + ": " + item.Name
-            }).ToList(),
-
-            OrderSelectList = orders.Select(order => new SelectListItem
-            {
-                Value = order.OrderId.ToString(),
-                Text = "Order" + order.OrderId.ToString() + ", Date: " + order.OrderDate + ", Customer: " + order.Customer.Name
-            }).ToList(),
-        };
-        return View(createOrderItemViewModel);
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> CreateOrderItem(OrderItem orderItem)
-    {
-        try
+        public async Task<IActionResult> Table()
         {
-            var newItem = _itemDbContext.Items.Find(orderItem.ItemId);
-            var newOrder = _itemDbContext.Orders.Find(orderItem.OrderId);
-
-            if (newItem == null || newOrder == null)
+            var list = await _orderInterface.GetAllOrders(); // Assuming 'GetAllOrders' is a method in your service
+            if (list == null)
             {
-                return BadRequest("Item or Order not found.");
+                _orderLogger.LogError("[OrderController] Order list not found during GetAllOrders call");
+                return NotFound("Order list not found");
             }
 
-            var newOrderItem = new OrderItem
-            {
-                ItemId = orderItem.ItemId,
-                Item = newItem,
-                Quantity = orderItem.Quantity,
-                OrderId = orderItem.OrderId,
-                Order = newOrder,
-            };
-            newOrderItem.OrderItemPrice = orderItem.Quantity * newOrderItem.Item.Price;
-
-            _itemDbContext.OrderItems.Add(newOrderItem);
-            await _itemDbContext.SaveChangesAsync();
-            return RedirectToAction(nameof(Table));
+            var itemListViewModel = new ItemListViewModel(list, "Table");
+            return View(itemListViewModel);
         }
-        catch
+
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> Edit(int id)
         {
-            return BadRequest("OrderItem creation failed.");
+            var order = await _orderInterface.GetOrderById(id); // Assuming 'GetOrderById' is a method in your service
+            if (order == null)
+            {
+                _orderLogger.LogError("[OrderController] Order not found for this ID: " + id);
+                return NotFound("Order not found");
+            }
+            return View(order);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> EditConfirmed(Order order) // Order is assumed to be a model in your context
+        {
+            if (ModelState.IsValid)
+            {
+                bool success = await _orderInterface.UpdateOrder(order); // Assuming 'UpdateOrder' is a method in your service
+                if (success)
+                {
+                    return RedirectToAction(nameof(Table));
+                }
+            }
+
+            _orderLogger.LogWarning("[OrderController] Order update failed", order);
+            return View(order);
+        }
+
+        // Assuming you have a method to create orders similar to 'lagOrdre' in "file 1"
+        [HttpPost]
+        [Authorize]
+        public IActionResult CreateOrder()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Order order, int houseId) // 'Order' and 'houseId' as parameters
+        {
+            if (ModelState.IsValid)
+            {
+                var house = await _houseInterface.GetHouseById(houseId); // Assuming 'GetHouseById' is a method in your service
+                if (house == null)
+                {
+                    return NotFound("House does not exist!");
+                }
+                bool success = await _orderInterface.CreateOrder(order); // Assuming 'CreateOrder' is a method in your service
+                if (success)
+                {
+                    // Assuming you have a method to generate PDF receipts similar to 'genererPdfKvittering' in "file 1"
+                    var htmlReceipt = "<html><body><p><Receipt Details>.....</p></body></html>"; // Replace with actual receipt details
+                    var pdfReceipt = _receiptInterface.GeneratePdfReceipt(htmlReceipt); // This method should return a byte array
+                    var fileName = "Order Receipt.pdf";
+                    return File(pdfReceipt, "application/pdf", fileName);
+                }
+            }
+
+            _orderLogger.LogWarning("[OrderService] Failed to generate a receipt for this order", order);
+            return RedirectToAction("Index"); // Assuming 'Index' is a method in your controller
+        }
+
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var order = await _orderInterface.GetOrderById(id); // Assuming 'GetOrderById' is a method in your service
+            if (order == null)
+            {
+                _orderLogger.LogError("[OrderController] Order not found for this ID", id);
+                return BadRequest("Order not found for given ID");
+            }
+            return View(order);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            bool success = await _orderInterface.DeleteOrder(id); // Assuming 'DeleteOrder' is a method in your service
+            if (!success)
+            {
+                _orderLogger.LogError("[OrderController] Failed to delete order for this ID", id);
+                return BadRequest("Failed to delete order");
+            }
+            return RedirectToAction(nameof(Table));
         }
     }
 }
