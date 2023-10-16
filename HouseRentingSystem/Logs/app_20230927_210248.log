@@ -1,0 +1,43 @@
+2023-09-27 21:02:51.372 +02:00 [Information] User profile is available. Using '"C:\Users\unnis\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-27 21:02:51.622 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-09-27 21:02:51.623 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-09-27 21:02:51.633 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-09-27 21:02:51.636 +02:00 [Information] Hosting environment: "Development"
+2023-09-27 21:02:51.637 +02:00 [Information] Content root path: "C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\"
+2023-09-27 21:02:52.382 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/ - -
+2023-09-27 21:02:52.465 +02:00 [Information] Executing endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 21:02:52.482 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HouseRentingSystem.Controllers.HomeController" ("HouseRentingSystem").
+2023-09-27 21:02:52.543 +02:00 [Information] Executing action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" - Validation state: Valid
+2023-09-27 21:02:52.549 +02:00 [Information] Executed action method "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7425ms.
+2023-09-27 21:02:52.558 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-27 21:02:52.741 +02:00 [Information] Executed ViewResult - view "Index" executed in 181.7986ms.
+2023-09-27 21:02:52.748 +02:00 [Information] Executed action "HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)" in 264.9403ms
+2023-09-27 21:02:52.749 +02:00 [Information] Executed endpoint '"HouseRentingSystem.Controllers.HomeController.Index (HouseRentingSystem)"'
+2023-09-27 21:02:52.779 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 400.8226ms
+2023-09-27 21:02:52.781 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-09-27 21:02:52.781 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-09-27 21:02:52.781 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery-validate/jquery.validate.js - -
+2023-09-27 21:02:52.783 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-09-27 21:02:52.888 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/js/bootstrap.js"'. Physical path: '"C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\wwwroot\lib\bootstrap\js\bootstrap.js"'
+2023-09-27 21:02:52.888 +02:00 [Information] Sending file. Request path: '"/lib/jquery-validate/jquery.validate.js"'. Physical path: '"C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\wwwroot\lib\jquery-validate\jquery.validate.js"'
+2023-09-27 21:02:52.888 +02:00 [Information] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"'
+2023-09-27 21:02:52.888 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19820 application/javascript 105.3184ms
+2023-09-27 21:02:52.888 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery-validate/jquery.validate.js - - - 200 52831 application/javascript 106.9816ms
+2023-09-27 21:02:52.888 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 200 149796 application/javascript 106.9814ms
+2023-09-27 21:02:52.900 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/8.jpg - -
+2023-09-27 21:02:52.900 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/6.jpg - -
+2023-09-27 21:02:52.900 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/images/7.jpg - -
+2023-09-27 21:02:52.900 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_vs/browserLink - -
+2023-09-27 21:02:52.900 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - -
+2023-09-27 21:02:52.905 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 5.6475ms
+2023-09-27 21:02:52.921 +02:00 [Information] Sending file. Request path: '"/lib/jquery/jquery.js"'. Physical path: '"C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\wwwroot\lib\jquery\jquery.js"'
+2023-09-27 21:02:52.923 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/lib/jquery/jquery.js - - - 200 295700 application/javascript 140.7805ms
+2023-09-27 21:02:52.926 +02:00 [Information] Sending file. Request path: '"/images/8.jpg"'. Physical path: '"C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\wwwroot\images\8.jpg"'
+2023-09-27 21:02:52.926 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/8.jpg - - - 200 45956 image/jpeg 26.4972ms
+2023-09-27 21:02:52.929 +02:00 [Information] Sending file. Request path: '"/images/7.jpg"'. Physical path: '"C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\wwwroot\images\7.jpg"'
+2023-09-27 21:02:52.929 +02:00 [Information] Sending file. Request path: '"/images/6.jpg"'. Physical path: '"C:\Users\unnis\OneDrive - OsloMet\5.semester\ITPE3200 Webappplikasjoner\Projects\HouseRentingSystem\HouseRentingSystem\wwwroot\images\6.jpg"'
+2023-09-27 21:02:52.930 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/6.jpg - - - 200 185314 image/jpeg 29.9802ms
+2023-09-27 21:02:52.930 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/images/7.jpg - - - 200 154286 image/jpeg 29.9662ms
+2023-09-27 21:02:52.938 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.2222ms
+2023-09-27 21:03:08.957 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7205/_framework/clear-browser-cache - -
+2023-09-27 21:03:08.959 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7205/_framework/clear-browser-cache - - - 200 0 - 1.8514ms
