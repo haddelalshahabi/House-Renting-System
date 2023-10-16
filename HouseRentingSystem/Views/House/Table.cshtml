@@ -1,8 +1,6 @@
-﻿@model ItemListViewModel
+﻿@model HouseRentingSystem.ViewModels.ItemListViewModel
 
-<h1>List of Houses (@Model.CurrentViewName View)</h1>
-<a href="/Item/Grid">Grid View</a>
+<h1>List of Houses</h1>
+<a type="button" class="" href="/Item/Grid">Grid View</a>
 
-<partial name="_ItemTable" model="Model.Items" />
-
-@*<a class="btn btn-primary" asp-action="OrderConsole">Console Output</a>*@
+<partial name="_HouseTable" model="Model.House"/>

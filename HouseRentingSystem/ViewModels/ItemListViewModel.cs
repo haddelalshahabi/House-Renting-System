@@ -6,14 +6,37 @@ namespace HouseRentingSystem.ViewModels
 {
     public class ItemListViewModel
     {
-        public IEnumerable<Item> Items;
+        public IEnumerable<House> Houses;
+        public IEnumerable<Order> Orders;
+        public IEnumerable<Customer> Customers;
         public string? CurrentViewName;
+        private House houseList;
+        private string viewName;
 
-        public ItemListViewModel(IEnumerable<Item> items, string? currentViewName)
+        public ItemListViewModel(IEnumerable<House> houses, string? currentViewName)
         {
-            Items = items;
+            Houses = houses;
             CurrentViewName = currentViewName;
         }
+
+        public ItemListViewModel(IEnumerable<Customer> customers, string? currentViewName)
+        {
+            Customers = customers;
+            CurrentViewName = currentViewName;
+        }
+
+        public ItemListViewModel(IEnumerable<Order> orders, string? currentViewName)
+        {
+            Orders = orders;
+            CurrentViewName = currentViewName;
+        }
+
+        public ItemListViewModel(House houseList, string viewName)
+        {
+            this.houseList = houseList;
+            this.viewName = viewName;
+        }
+
+        public ItemListViewModel() { }
     }
 }
-

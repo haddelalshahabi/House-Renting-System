@@ -103,6 +103,20 @@
         <span asp-validation-for="Price" class="text-danger"></span>
     </div>
 
+    <!-- NumberOfRooms -->
+    <div class="form-group">
+        <label asp-for="NumberOfRooms"></label>
+        <input asp-for="NumberOfRooms" class="form-control" type="number" />
+        <span asp-validation-for="NumberOfRooms" class="text-danger"></span>
+    </div>
+
+    <!-- House Description -->
+    <div class="form-group">
+        <label asp-for="Description"></label><span class="text-danger">*</span>
+        <textarea class="form-control" asp-for="Description" rows="5" required></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
     <!-- LeaseDuration -->
     <div class="form-group">
         <label asp-for="LeaseDuration"></label>
@@ -116,17 +130,13 @@
         <input asp-for="UtilitiesIncluded" class="form-control" type="checkbox" />
     </div>
 
-    <!-- ImageUrl -->
+    <!-- HasParking -->
     <div class="form-group">
-        <label for="ImageUrl">Upload Image :</label>
-        <input asp-for="ImageUrl">
-    </div>
-
-    <!-- NumberOfRooms -->
-    <div class="form-group">
-        <label asp-for="NumberOfRooms"></label>
-        <input asp-for="NumberOfRooms" class="form-control" type="number" />
-        <span asp-validation-for="NumberOfRooms" class="text-danger"></span>
+        <label asp-for="HasParking"></label>
+        <select asp-for="HasParking" class="form-control">
+            <option value="True">YES</option>
+            <option value="False">NO</option>
+        </select>
     </div>
 
     <!-- IsFurnished -->
@@ -138,14 +148,6 @@
         </select>
     </div>
 
-    <!-- HasParking -->
-    <div class="form-group">
-        <label asp-for="HasParking"></label>
-        <select asp-for="HasParking" class="form-control">
-            <option value="True">YES</option>
-            <option value="False">NO</option>
-        </select>
-    </div>
 
     <!-- PetFriendly -->
     <div class="form-group">
@@ -161,6 +163,12 @@
         <label asp-for="Amenities"></label>
         <textarea asp-for="Amenities" class="form-control"></textarea>
         <span asp-validation-for="Amenities" class="text-danger"></span>
+    </div>
+
+    <!-- ImageUrl -->
+    <div class="form-group">
+        <label for="ImageUrl">Upload Image :</label>
+        <input asp-for="ImageUrl">
     </div>
 
     <button type="submit" class="btn btn-primary">Create</button>
