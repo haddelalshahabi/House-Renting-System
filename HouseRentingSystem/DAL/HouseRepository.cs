@@ -8,20 +8,20 @@ namespace HouseRentingSystem.DAL
 {
     public class HouseRepository : HouseInterface
     {
-        private readonly ItemDbContext _db;
+        private readonly ItemDBContext _db;
         private readonly ILogger<HouseRepository> _logger;
 
-        public HouseRepository(ItemDbContext db, ILogger<HouseRepository> logger)
+        public HouseRepository(ItemDBContext db, ILogger<HouseRepository> logger)
         {
             _db = db;
             _logger = logger;
         }
 
-        public async Task<IEnumerable<House>> GetAll()
+        public async Task<IEnumerable<House>> GetAllHouses()
         {
             try
             {
-                return await _db.house.ToListAsync();
+                return await _db.House.ToListAsync();
             }
             catch (Exception ex)
             {
@@ -34,7 +34,7 @@ namespace HouseRentingSystem.DAL
         {
             try
             {
-                return await _db.house.FromSqlRaw("SELECT* FROM house WHERE IsAvailable=1").ToListAsync();
+                return await _db.House.FromSqlRaw("SELECT* FROM house WHERE IsAvailable=1").ToListAsync();
             }
             catch (Exception ex)
             {
@@ -43,11 +43,11 @@ namespace HouseRentingSystem.DAL
             }
         }
 
-        public async Task<IEnumerable<House>> GetAllFiltered(string city, int minArea, int maxArea, int minPrice, int maxPrice, int minRoomCount, int maxRoomCount)
+        public async Task<IEnumerable<House>> GetAllWithFiltered(string city, int minArea, int maxArea, int minPrice, int maxPrice, int minRoomCount, int maxRoomCount)
         {
             try
             {
-                var query = _db.house.AsQueryable();
+                var query = _db.House.AsQueryable();
 
                 if (!string.IsNullOrEmpty(city))
                 {
@@ -71,11 +71,11 @@ namespace HouseRentingSystem.DAL
                 }
                 if (minRoomCount > 0)
                 {
-                    query = query.Where(h => h.RoomCount >= minRoomCount);
+                    query = query.Where(h => h.NumberOfRooms >= minRoomCount);
                 }
                 if (maxRoomCount > 0)
                 {
-                    query = query.Where(h => h.RoomCount <= maxRoomCount);
+                    query = query.Where(h => h.NumberOfRooms <= maxRoomCount);
                 }
 
                 return await query.ToListAsync();
@@ -91,7 +91,7 @@ namespace HouseRentingSystem.DAL
         {
             try
             {
-                return await _db.house.FindAsync(id);
+                return await _db.House.FindAsync(id);
             }
             catch (Exception ex)
             {
@@ -100,11 +100,11 @@ namespace HouseRentingSystem.DAL
             }
         }
 
-        public async Task<bool> Create(House house)
+        public async Task<bool> CreateHouse(House house)
         {
             try
             {
-                _db.house.Add(house);
+                _db.House.Add(house);
                 await _db.SaveChangesAsync();
                 return true;
             }
@@ -115,11 +115,11 @@ namespace HouseRentingSystem.DAL
             }
         }
 
-        public async Task<bool> Update(House house)
+        public async Task<bool> UpdateHouse(House house)
         {
             try
             {
-                _db.house.Update(house);
+                _db.House.Update(house);
                 await _db.SaveChangesAsync();
                 return true;
             }
@@ -130,17 +130,17 @@ namespace HouseRentingSystem.DAL
             }
         }
 
-        public async Task<bool> Delete(int id)
+        public async Task<bool> DeleteHouse(int id)
         {
             try
             {
-                var house = await _db.house.FindAsync(id);
+                var house = await _db.House.FindAsync(id);
                 if (house == null)
                 {
                     _logger.LogError("[HouseRepository] house does not exist for this id: " + id);
                     return false;
                 }
-                _db.house.Remove(house);
+                _db.House.Remove(house);
                 await _db.SaveChangesAsync();
                 return true;
             }
@@ -151,7 +151,7 @@ namespace HouseRentingSystem.DAL
             }
         }
 
-        public Task<House> GetAllWithFilter(string city, int minArea, int maxArea, int minPrice, int maxPrice, int minRoomCount, int maxRoomCount)
+        public Task<House> GetAllFiltered(string city, int minArea, int maxArea, int minPrice, int maxPrice, int minRooms, int maxRooms)
         {
             throw new NotImplementedException();
         }

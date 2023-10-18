@@ -7,7 +7,7 @@ using HouseRentingSystem.DAL;
 using HouseRentingSystem.Services; // Assuming you have a similar structure for services in HouseRentingSystem
 using Serilog;
 using Serilog.Events;
-using HouseRentingSystem.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ItemDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ItemDbContextConnection' was not found");
@@ -19,18 +19,18 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
 });
 
-builder.Services.AddDbContext<ItemDbContext>(options => {
+builder.Services.AddDbContext<ItemDBContext>(options => {
     options.UseSqlite(
         builder.Configuration["ConnectionStrings:ItemDbContextConnection"]);
 });
 
-builder.Services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<ItemDbContext>();
+builder.Services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<ItemDBContext>();
 
 builder.Services.AddTransient<HouseRentingSystem.Services.Receipt>(); // Assuming you have a receipt service in HouseRentingSystem
 
-builder.Services.AddScoped<HouseInterface, HouseRepo>();
-builder.Services.AddScoped<CustomerInterface, CustomerRepo>();
-builder.Services.AddScoped<OrderInterface, OrderRepo>();
+builder.Services.AddScoped<HouseInterface,HouseRepository>();
+builder.Services.AddScoped<CustomerInterface, CustomerRepository>();
+builder.Services.AddScoped<OrderInterface, OrderRepository>();
 
 builder.Services.AddRazorPages();
 builder.Services.AddSession();

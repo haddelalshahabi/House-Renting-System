@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
 
@@ -14,11 +13,11 @@ namespace HouseRentingSystem.Models
         [Key]
         public long AccountNumber { get; set; }
 
-        public virtual List<House> HouseList { get; set; }
+        public virtual List<House> ListOfHouses { get; set; }
 
         [NotNull]
-        public virtual Users Users { get; set; }
+        public virtual User User { get; set; }
 
-        public int AdCount { get; set; }
+        public int NumberOfAdvertisements { get; set; }
     }
 }

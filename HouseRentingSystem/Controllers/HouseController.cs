@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using HouseRentingSystem.Services; // Assuming you have a service similar to HusInterface
 using HouseRentingSystem.Models; // For the House model
 using HouseRentingSystem.ViewModels; // For the ItemListViewModel
+using HouseRentingSystem.DAL;
 
 namespace HouseRentingSystem.Controllers
 {
@@ -19,7 +20,7 @@ namespace HouseRentingSystem.Controllers
 
         public async Task<IActionResult> Table()
         {
-            var list = await _houseInterface.GetAll();
+            var list = await _houseInterface.GetAllHouses();
             if (list == null)
             {
                 _houseLogger.LogError("[HouseController] House list not found when GetAll() was called");
@@ -32,7 +33,7 @@ namespace HouseRentingSystem.Controllers
 
         public async Task<IActionResult> AvailableHouses()
         {
-            var list = await _houseInterface.GetAll();
+            var list = await _houseInterface.GetAllHouses();
             if (list == null)
             {
                 _houseLogger.LogError("[HouseController] House list not found when GetAll() was called");
@@ -45,7 +46,7 @@ namespace HouseRentingSystem.Controllers
 
         public async Task<IActionResult> FetchWithFilter(string city, int minArea, int maxArea, int minPrice, int maxPrice, int minRooms, int maxRooms)
         {
-            var list = await _houseInterface.GetAllWithFilter(city, minArea, maxArea, minPrice, maxPrice, minRooms, maxRooms);
+            var list = await _houseInterface.GetAllFiltered(city, minArea, maxArea, minPrice, maxPrice, minRooms, maxRooms);
             if (list == null)
             {
                 return NotFound("Nothing found");
@@ -56,7 +57,7 @@ namespace HouseRentingSystem.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Overview(int id)
+        public async Task<IActionResult> Details(int id)
         {
             var house = await _houseInterface.GetHouseById(id);
             if (house == null)
@@ -116,7 +117,7 @@ namespace HouseRentingSystem.Controllers
                 }
                 else
                 {
-                    _houseLogger.LogWarning("[HouseController] Failed to modify the house. House ID: " + house.Id); // Assuming house has a property Id
+                    _houseLogger.LogWarning("[HouseController] Failed to modify the house. House ID: " + house.HouseId); // Assuming house has a property Id
                     ModelState.AddModelError(string.Empty, "Failed to modify the house. Please try again.");
                 }
             }

@@ -1,4 +1,7 @@
-﻿namespace HouseRentingSystem.Services
+﻿using DinkToPdf;
+using DinkToPdf.Contracts;
+
+namespace HouseRentingSystem.Services
 {
     public class Receipt
     {

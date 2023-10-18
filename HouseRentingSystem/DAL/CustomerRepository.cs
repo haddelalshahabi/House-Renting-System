@@ -1,24 +1,25 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using HouseRentingSystem.Models;
+using HouseRentingSystem.Services;
 
 namespace HouseRentingSystem.DAL
 {
     public class CustomerRepository : CustomerInterface
     {
-        private readonly ItemDbContext _db;
+        private readonly ItemDBContext _db;
         private readonly ILogger<CustomerRepository> _customerLogger;
 
-        public CustomerRepository(ItemDbContext db, ILogger<CustomerRepository> logger)
+        public CustomerRepository(ItemDBContext db, ILogger<CustomerRepository> logger)
         {
             _db = db;
             _customerLogger = logger;
         }
 
-        public async Task<IEnumerable<Customer>?> GetAll()
+        public async Task<IEnumerable<Customer>?> GetAllCustomers()
         {
             try
             {
-                return await _db.customer.ToListAsync();
+                return await _db.Customer.ToListAsync();
             }
             catch (Exception ex)
             {
@@ -31,7 +32,7 @@ namespace HouseRentingSystem.DAL
         {
             try
             {
-                return await _db.customer.FindAsync(id);
+                return await _db.Customer.FindAsync(id);
             }
             catch (Exception ex)
             {
@@ -44,7 +45,7 @@ namespace HouseRentingSystem.DAL
         {
             try
             {
-                _db.customer.Add(customer);
+                _db.Customer.Add(customer);
                 await _db.SaveChangesAsync();
                 return true;
             }
@@ -59,7 +60,7 @@ namespace HouseRentingSystem.DAL
         {
             try
             {
-                _db.customer.Update(customer);
+                _db.Customer.Update(customer);
                 await _db.SaveChangesAsync();
                 return true;
             }
@@ -74,14 +75,14 @@ namespace HouseRentingSystem.DAL
         {
             try
             {
-                var customer = await _db.customer.FindAsync(id);
+                var customer = await _db.Customer.FindAsync(id);
                 if (customer == null)
                 {
                     _customerLogger.LogError("[CustomerRepository] Customer does not exist for this id" + id);
                     return false;
                 }
 
-                _db.customer.Remove(customer);
+                _db.Customer.Remove(customer);
                 await _db.SaveChangesAsync();
                 return true;
             }

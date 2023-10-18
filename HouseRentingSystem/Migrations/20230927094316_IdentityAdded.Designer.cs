@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HouseRentingSystem.Migrations
 {
-    [DbContext(typeof(ItemDbContext))]
+    [DbContext(typeof(ItemDBContext))]
     [Migration("20230927094316_IdentityAdded")]
     partial class IdentityAdded
     {

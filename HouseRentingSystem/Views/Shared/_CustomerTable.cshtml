@@ -16,17 +16,17 @@
             @foreach (var customer in Model)
             {
                 <tr>
-                    <td>@customer.Name</td>
-                    <td>@customer.Birthdate.ToString("dd/MM/yyyy")</td>
-                    <td>@customer.Email</td>
-                    <td>@customer.PhoneNumber</td>
-                    <td>@customer.Address</td>
+                    <td>@customer.User.Name</td>
+                    <td>@customer.User.DateOfBirth.ToString("dd/MM/yyyy")</td>
+                    <td>@customer.User.Email</td>
+                    <td>@customer.User.PhoneNumber</td>
+                    <td>@customer.User.Address</td>
 
                     <td>
-                        @if (customer.Orders != null && customer.Orders.Any())
+                        @if (customer.Order != null && customer.Order.Any())
                         {
                             <div class="orders-list">
-                                Orders: @string.Join(", ", customer.Orders.Select(order => $"Order{order.OrderId}"))
+                                Orders: @string.Join(", ", customer.Order.Select(order => $"Order{order.OrderId}"))
                             </div>
                         }
                         else

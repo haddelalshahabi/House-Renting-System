@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HouseRentingSystem.Migrations
 {
-    [DbContext(typeof(ItemDbContext))]
+    [DbContext(typeof(ItemDBContext))]
     partial class ItemDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

@@ -4,12 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using HouseRentingSystem.DAL;
 
 #nullable disable
 
 namespace HouseRentingSystem.Migrations
 {
-    [DbContext(typeof(ItemDbContext))]
+    [DbContext(typeof(ItemDBContext))]
     [Migration("20230920125810_InitDb")]
     partial class InitDb
     {

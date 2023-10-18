@@ -9,17 +9,17 @@ namespace HouseRentingSystem.DAL
         public static void Seed(IApplicationBuilder app)
         {
             using var serviceScope = app.ApplicationServices.CreateScope();
-            ItemDbContext context = serviceScope.ServiceProvider.GetRequiredService<ItemDbContext>();
+            ItemDBContext context = serviceScope.ServiceProvider.GetRequiredService<ItemDBContext>();
             context.Database.EnsureCreated();
 
-            if (!context.user.Any() && !context.customer.Any() && !context.owner.Any())
+            if (!context.User.Any() && !context.Customer.Any() && !context.Owner.Any())
             {
                 var user = new User
                 {
                     Name = "Jonas Frankstein",
                     Address = "Holbergsplass3",
                     Email = "Jonas1@gmail.com",
-                    BirthDate = new DateTime(1993, 6, 3),
+                    DateOfBirth = new DateTime(1993, 6, 3),
                     PhoneNumber = 93655711
                 };
                 var customer = new Customer
@@ -30,27 +30,27 @@ namespace HouseRentingSystem.DAL
                 {
                     User = user,
                     AccountNumber = 52877738481,
-                    AdCount = 0
+                    NumberOfAdvertisements = 0
                 };
 
                 context.AddRange(customer, owner);
                 context.SaveChanges();
             }
 
-            if (!context.house.Any())
+            if (!context.House.Any())
             {
                 var house = new List<House>
                 {
-                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
-                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
-                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
-                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
-                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
-                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
-                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
-                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
-                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
-                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", IsAvailable=true, Price=400, RoomCount=4, IsFurnished=true, HasParking=false, ImageURL = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", Available=true, Price=400, NumberOfRooms=4, IsFurnished=true, HasParking=false, ImageUrl = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", Available=true, Price=400, NumberOfRooms=4, IsFurnished=true, HasParking=false, ImageUrl = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", Available=true, Price=400, NumberOfRooms=4, IsFurnished=true, HasParking=false, ImageUrl = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", Available=true, Price=400, NumberOfRooms=4, IsFurnished=true, HasParking=false, ImageUrl = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", Available=true, Price=400, NumberOfRooms=4, IsFurnished=true, HasParking=false, ImageUrl = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", Available=true, Price=400, NumberOfRooms=4, IsFurnished=true, HasParking=false, ImageUrl = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", Available=true, Price=400, NumberOfRooms=4, IsFurnished=true, HasParking=false, ImageUrl = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", Available=true, Price=400, NumberOfRooms=4, IsFurnished=true, HasParking=false, ImageUrl = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", Available=true, Price=400, NumberOfRooms=4, IsFurnished=true, HasParking=false, ImageUrl = "/Bilder/Pic1.jpg"},
+                    new House {Address="Osloveien18", Area=200, Description="bla bla bla", City="Oslo", Available=true, Price=400, NumberOfRooms=4, IsFurnished=true, HasParking=false, ImageUrl = "/Bilder/Pic1.jpg"},
                 };
 
                 var user = new User
@@ -58,7 +58,7 @@ namespace HouseRentingSystem.DAL
                     Name = "Leif Hansen ",
                     Address = "Nydalenveien33",
                     Email = "leif@gmail.com",
-                    BirthDate = new DateTime(1995, 2, 1),
+                    DateOfBirth = new DateTime(1995, 2, 1),
                     PhoneNumber = 456789546,
                 };
 
@@ -66,22 +66,22 @@ namespace HouseRentingSystem.DAL
                 {
                     User = user,
                     AccountNumber = 4567899567,
-                    AdCount = 0,
-                    HouseList = houses
+                    NumberOfAdvertisements = 0,
+                    ListOfHouses = house
                 };
 
                 context.AddRange(owner);
                 context.SaveChanges();
             }
 
-            if (!context.order.Any())
+            if (!context.Order.Any())
             {
                 var user = new User
                 {
                     Name = "Andreas Tøen",
                     Address = "adgerveien22",
                     Email = "andreas1@gmail.com",
-                    BirthDate = new DateTime(1983, 7, 2),
+                    DateOfBirth = new DateTime(1983, 7, 2),
                     PhoneNumber = 45678788
                 };
 
@@ -99,13 +99,13 @@ namespace HouseRentingSystem.DAL
                     {
                         Date = DateTime.Now,
                         PaymentMethod = "Card",
-                        CustomerID = customer.CustomerID
+                        CustomerId = customer.CustomerId
                     },
                     new Order
                     {
                         Date = DateTime.Now,
                         PaymentMethod = "Klarna",
-                        CustomerID = customer.CustomerID
+                        CustomerId = customer.CustomerId
                     }
                 };
 
@@ -113,7 +113,7 @@ namespace HouseRentingSystem.DAL
                 {
                     User = user,
                     AccountNumber = 33333333333,
-                    AdCount = 0
+                    NumberOfAdvertisements = 0
                 };
 
                 var house = new House
@@ -122,12 +122,12 @@ namespace HouseRentingSystem.DAL
                     Area = 200,
                     Description = "srdtfcygvuhbjkla",
                     City = "Oslo",
-                    IsAvailable = true,
+                    Available = true,
                     Price = 1600,
-                    RoomCount = 4,
+                    NumberOfRooms = 4,
                     IsFurnished = true,
                     HasParking = false,
-                    ImageURL = "~/Bilder/1.jpg",
+                    ImageUrl = "~/Bilder/1.jpg",
                     Owner = owner
                 };
 

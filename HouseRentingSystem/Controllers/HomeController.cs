@@ -2,6 +2,7 @@
 using HouseRentingSystem.Services; // This assumes you have a similar service layer as in "file 1"
 using HouseRentingSystem.ViewModels; // This assumes you have defined a similar ViewModel as in "file 1"
 using System.Threading.Tasks;
+using HouseRentingSystem.DAL;
 
 namespace HouseRentingSystem.Controllers
 {

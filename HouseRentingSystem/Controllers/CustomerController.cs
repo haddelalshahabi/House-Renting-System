@@ -1,43 +1,43 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using HouseRentingSystem.Models;
+using HouseRentingSystem.ViewModels;
+using HouseRentingSystem.DAL;
+using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
+using Microsoft.Extensions.Logging;
 
 namespace HouseRentingSystem.Controllers
 {
-    [Authorize] // Ensure the entire controller requires authorization
+    [Authorize]
     public class CustomerController : Controller
     {
-        private readonly ILogger<CustomerController> _logger; // Assuming you want to use the built-in ILogger
+        private readonly ILogger<CustomerController> _logger;
         private readonly CustomerInterface _customerInterface;
 
-        public CustomerController(CustomerInterface _customerInterface, ILogger<CustomerController> logger)
+        public CustomerController(CustomerInterface customerInterface, ILogger<CustomerController> logger)
         {
-            _customerInterface = Interface;
+            _customerInterface = customerInterface;
             _logger = logger;
         }
 
         public async Task<IActionResult> Table()
         {
-            var customers = await _customerInterface.Customers.ToListAsync();
+            var customers = await _customerInterface.GetAllCustomers();
             if (customers == null)
             {
                 _logger.LogError("[CustomerController] Customer list not found");
                 return NotFound("Customer list not found");
             }
 
-            // Assuming there is a ViewModel called "ItemListViewModel" similar to "file 1"
-            var itemListViewModel = new ItemListViewModel(customers, "Table");
+            var itemListViewModel = new ItemListViewModel(customers.ToList(), "Table");
             return View(itemListViewModel);
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(int id) // Changed from 'Endre' to 'Edit'
+        public async Task<IActionResult> Edit(int id)
         {
-            var customer = await _customerInterface.Customers.FindAsync(id);
+            var customer = await _customerInterface.GetCustomerById(id);
             if (customer == null)
             {
                 _logger.LogError($"[CustomerController] Customer not found for this ID: {id}");
@@ -47,12 +47,11 @@ namespace HouseRentingSystem.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditConfirmed(Customer customer) // Changed from 'EndreBekreftet' to 'EditConfirmed'
+        public async Task<IActionResult> EditConfirmed(Customer customer)
         {
             if (ModelState.IsValid)
             {
-                _customerInterface.Update(customer); // Updating the customer
-                await _customerInterface.SaveChangesAsync();
+                await _customerInterface.UpdateCustomer(customer);
                 return RedirectToAction(nameof(Table));
             }
 
@@ -64,12 +63,11 @@ namespace HouseRentingSystem.Controllers
         public IActionResult Create() { return View(); }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Customer customer) // Changed from 'Lag' to 'Create'
+        public async Task<IActionResult> Create(Customer customer)
         {
             if (ModelState.IsValid)
             {
-                await _customerInterface.Customers.AddAsync(customer);
-                await _customerInterface.SaveChangesAsync();
+                await _customerInterface.CreateCustomer(customer);
                 return RedirectToAction(nameof(Table));
             }
 
@@ -78,9 +76,9 @@ namespace HouseRentingSystem.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Delete(int id) // Changed from 'Slett' to 'Delete'
+        public async Task<IActionResult> Delete(int id)
         {
-            var customer = await _customerInterface.Customers.FindAsync(id);
+            var customer = await _customerInterface.GetCustomerById(id);
             if (customer == null)
             {
                 _logger.LogError($"[CustomerController] Customer not found for this ID: {id}");
@@ -90,13 +88,11 @@ namespace HouseRentingSystem.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> DeleteConfirmed(int id) // Changed from 'SlettBekreftet' to 'DeleteConfirmed'
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var customer = await _customerInterface.Customers.FindAsync(id);
-            if (customer != null)
+            var result = await _customerInterface.DeleteCustomer(id);
+            if (result)
             {
-                _customerInterface.Customers.Remove(customer);
-                await _customerInterface.SaveChangesAsync();
                 return RedirectToAction(nameof(Table));
             }
 

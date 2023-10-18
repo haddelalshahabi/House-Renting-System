@@ -30,16 +30,24 @@ namespace HouseRentingSystem.Models
         public string Address { get; set; }
 
         [Range(1, 20, ErrorMessage = "Number of rooms must be between 1 to 20.")]
-        public int RoomCount { get; set; }
+        public int NumberOfRooms { get; set; }
 
-        public bool IsAvailable { get; set; }
+        public bool Available { get; set; }
 
-        public virtual Owner HouseOwner { get; set; }
+        public virtual Owner Owner { get; set; }
 
-        public virtual List<Order> Orders { get; set; }
+        public virtual List<Order> OrderList { get; set; }
 
         public bool HasParking { get; set; }
 
         public bool IsFurnished { get; set; }
+
+        public string LeaseDuration { get; set; }
+
+        public bool UtilitiesIncluded { get; set; }
+
+        public bool PetFriendly { get; set; }
+
+        public string Amenities { get; set; }
     }
 }

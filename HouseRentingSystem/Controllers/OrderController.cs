@@ -4,6 +4,7 @@ using HouseRentingSystem.Services; // Assuming you have a service similar to Ord
 using HouseRentingSystem.Models; // For the Order and House models
 using HouseRentingSystem.ViewModels; // For the ItemListViewModel
 using Microsoft.Extensions.Logging; // For the ILogger
+using HouseRentingSystem.DAL;
 
 namespace HouseRentingSystem.Controllers
 {

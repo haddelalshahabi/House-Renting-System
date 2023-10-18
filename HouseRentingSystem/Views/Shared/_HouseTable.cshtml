@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Item>
+﻿@model IEnumerable<HouseRentingSystem.Models.House>
 
 <div class="container">
     <table class='table table-striped'>
@@ -26,11 +26,11 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.HouseID</td>
-                <td>@item.OwnerID</td>
+                <td>@item.HouseId</td>
+                <td>@item.Owner</td>
                 <td>@item.Price.ToString("0.00 NOK")</td>
                 <td>@item.Description</td>
-                <td>@item.Availability</td>
+                <td>@item.Available</td>
                 <td>@item.LeaseDuration</td>
                 <td>@item.UtilitiesIncluded</td>
                 <td>
@@ -46,8 +46,8 @@
                 <td>@item.Amenities</td>
 
                 <td>
-                    <a asp-action="UpdateHouse" asp-route-id="@item.HouseID">Update</a>
-                    <a asp-action="DeleteHouse" asp-route-id="@item.HouseID">Delete</a>
+                    <a asp-action="UpdateHouse" asp-route-id="@item.HouseId">Update</a>
+                    <a asp-action="DeleteHouse" asp-route-id="@item.HouseId">Delete</a>
                 </td>
             </tr>
         }

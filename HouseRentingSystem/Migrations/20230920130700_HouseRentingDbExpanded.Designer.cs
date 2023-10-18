@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HouseRentingSystem.Migrations
 {
-    [DbContext(typeof(ItemDbContext))]
+    [DbContext(typeof(ItemDBContext))]
     [Migration("20230920130700_HouseRentingDbExpanded")]
     partial class HouseRentingDbExpanded
     {

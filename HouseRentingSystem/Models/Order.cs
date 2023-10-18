@@ -11,17 +11,19 @@ namespace HouseRentingSystem.Models
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int OrdreId { get; set; }
+        public int OrderId { get; set; }
 
-        public DateTime Dato { get; set; }
+        public DateTime Date { get; set; }
 
         [StringLength(200)]
-        public string paytmentMethod { get; set; }
+        public string PaymentMethod { get; set; }
 
         public virtual House house { get; set; }
-        public int houseId { get; set; }
+        public int HouseId { get; set; }
 
-        public int CustomerID { get; set; }
-        public virtual Customer customer { get; set; }
+        public int CustomerId { get; set; }
+        public virtual Customer customerId { get; set; }
+
+        public decimal PaidAmount { get; set; }
     }
 }

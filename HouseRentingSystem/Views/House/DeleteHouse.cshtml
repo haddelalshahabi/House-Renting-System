@@ -1,4 +1,4 @@
-﻿@model HouseRentingSystem.Models.Item
+﻿@model HouseRentingSystem.Models.House
 
 <h2>Delete House</h2>
 
@@ -67,7 +67,7 @@
         <dd class="col-sm-10">@Model.UtilitiesIncluded</dd>
     </dl>
 
-    <form asp-action="DeleteConfirmed" asp-route-id="@Model.HouseID" method="post">
+    <form asp-action="DeleteConfirmed" asp-route-id="@Model.HouseId" method="post">
         <button type="submit" class="btn btn-danger">Delete</button>
         <a asp-action="Table" class="btn btn-secondary">Cancel</a>
     </form>

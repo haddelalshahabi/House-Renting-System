@@ -1,15 +1,15 @@
 ﻿using HouseRentingSystem.Models;
 
-namespace HouseRentingSystem.Services
+namespace HouseRentingSystem.DAL
 {
-    public interface IHouseInterface
+    public interface HouseInterface
     {
-        Task<IEnumerable<House>> GetAll();
+        Task<IEnumerable<House>> GetAllHouses();
         Task<House> GetHouseById(int id);
 
-        Task<House> GetAllWithFilter(string city, int minArea, int maxArea, int minPrice, int maxPrice, int minRooms, int maxRooms);
-        Task<bool> Create(House house);
-        Task<bool> Update(House house);
-        Task<bool> Delete(int id);
+        Task<House> GetAllFiltered(string city, int minArea, int maxArea, int minPrice, int maxPrice, int minRooms, int maxRooms);
+        Task<bool> CreateHouse(House house);
+        Task<bool> UpdateHouse(House house);
+        Task<bool> DeleteHouse(int id);
     }
 }

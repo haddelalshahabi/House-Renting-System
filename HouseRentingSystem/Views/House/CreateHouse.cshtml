@@ -1,4 +1,4 @@
-﻿@model HouseRentingSystem.Models.Item
+﻿@model HouseRentingSystem.Models.House
 
 <h2>Create New House</h2>
 
@@ -56,9 +56,9 @@
 
     <!-- Owner's Person ID -->
     <div class="form-group">
-        <label asp-for="Owner.User.PersonID"></label><span class="text-danger">*</span>
-        <input asp-for="Owner.User.PersonID" class="form-control" />
-        <span asp-validation-for="Owner.User.PersonID" class="text-danger"></span>
+        <label asp-for="Owner.User.UserId"></label><span class="text-danger">*</span>
+        <input asp-for="Owner.User.UserId" class="form-control" />
+        <span asp-validation-for="Owner.User.UserId" class="text-danger"></span>
     </div>
 
     <!-- Owner's Phone Number -->

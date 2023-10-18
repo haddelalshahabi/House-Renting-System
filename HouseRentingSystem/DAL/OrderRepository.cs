@@ -1,25 +1,26 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using HouseRentingSystem.Models;
+using HouseRentingSystem.Services;
 
 namespace HouseRentingSystem.DAL
 {
     public class OrderRepository : OrderInterface
     {
 
-        private readonly ItemDbContext _db;
+        private readonly ItemDBContext _db;
         private readonly ILogger<OrderInterface> _orderLogger;
 
-        public OrderRepository(ItemDbContext db, ILogger<OrderInterface> logger)
+        public OrderRepository(ItemDBContext db, ILogger<OrderInterface> logger)
         {
             _db = db;
             _orderLogger = logger;
         }
 
-        public async Task<IEnumerable<Order>?> GetAll()
+        public async Task<IEnumerable<Order>?> GetAllOrders()
         {
             try
             {
-                return await _db.order.ToListAsync();
+                return await _db.Order.ToListAsync();
             }
             catch (Exception ex)
             {
@@ -32,7 +33,7 @@ namespace HouseRentingSystem.DAL
         {
             try
             {
-                return await _db.order.FindAsync(id);
+                return await _db.Order.FindAsync(id);
             }
             catch (Exception ex)
             {
@@ -45,7 +46,7 @@ namespace HouseRentingSystem.DAL
         {
             try
             {
-                _db.order.Add(order);
+                _db.Order.Add(order);
                 await _db.SaveChangesAsync();
                 return true;
             }
@@ -60,7 +61,7 @@ namespace HouseRentingSystem.DAL
         {
             try
             {
-                _db.order.Update(order);
+                _db.Order.Update(order);
                 await _db.SaveChangesAsync();
                 return true;
             }
@@ -75,14 +76,14 @@ namespace HouseRentingSystem.DAL
         {
             try
             {
-                var order = await _db.order.FindAsync(id);
+                var order = await _db.Order.FindAsync(id);
                 if (order == null)
                 {
                     _orderLogger.LogError("[OrderRepository] Order does not exist for this id" + id);
                     return false;
                 }
 
-                _db.order.Remove(order);
+                _db.Order.Remove(order);
                 await _db.SaveChangesAsync();
                 return true;
             }
